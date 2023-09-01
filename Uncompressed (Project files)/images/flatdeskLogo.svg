@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="300px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{
+	fill:none;
+	stroke:#000000;
+	stroke-width:7.5;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+	}
+</style>
+
+<defs>
+	<style>
+	#main1{
+		stroke-dasharray: 1013;
+		stroke-dashoffset: 0;
+	}
+
+	#main2{
+		stroke-dasharray: 344;
+		stroke-dashoffset: 344;
+	}
+
+	#leg1{
+		stroke-dasharray: 78;
+		stroke-dashoffset: 78;
+	}
+
+	#leg2{
+		stroke-dasharray: 98;
+		stroke-dashoffset: 98;
+	}
+	
+	#stripe1{
+		stroke-dasharray: 135;
+		stroke-dashoffset: 135;
+	}
+
+	#stripe2{
+		stroke-dasharray: 135;
+		stroke-dashoffset: 135;
+	}
+
+	#stripe3{
+		stroke-dasharray: 135;
+		stroke-dashoffset: 135;
+	}
+	</style>
+</defs>
+
+<polyline id="leg1" class="st0" points="49.938,219.734 69.333,210.083 69.333,153.844 "/>
+<polyline id="leg2" class="st0" points="126.516,258.047 126.516,182.5 107.141,172.844 "/>
+<line id="stripe1" class="st0" x1="174.5" y1="65.833" x2="54.511" y2="126.148"/>
+<line id="stripe2" class="st0" x1="102.833" y1="126.148" x2="222.625" y2="66.156"/>
+<line id="stripe3" class="st0" x1="222.625" y1="90" x2="102.833" y2="150.508"/>
+<polyline id="main2" class="st0" points="30.565,114.076 126.375,162.375 251.375,99.625 251.375,196.312 "/>
+<polygon id="main1" class="box" points="30.547,210.062 30.565,114.076 174.5,42.094 222.625,66.156 270.469,90.078 
+	270.469,186.047 251.094,196.312 231.703,186.062 231.703,129.781 145.922,172.844 145.922,248.328 126.516,258.047 
+	107.141,248.344 107.141,172.844 69.344,153.844 49.953,144.062 49.938,219.734 "/>
+</svg>
