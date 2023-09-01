@@ -17,6 +17,9 @@
       steps:
         - name: Checkout code
           uses: actions/checkout@v2
+
+        - name: Install dotenv-webpack
+          run: npm install dotenv-webpack  # Manual installation
   
         - name: Install dependencies
           run: npm install

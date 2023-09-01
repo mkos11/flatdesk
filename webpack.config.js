@@ -1,5 +1,6 @@
-const path = require('path');
 const Dotenv = require('dotenv-webpack');  // Add this line at the top
+const path = require('path');
+
 
 module.exports = {
   entry: 'W:/flatdesk/Uncompressed (Project files)/scripts/app.js',
