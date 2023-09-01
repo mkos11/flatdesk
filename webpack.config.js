@@ -3,7 +3,7 @@ const path = require('path');
 
 
 module.exports = {
-  entry: 'W:/flatdesk/Uncompressed (Project files)/scripts/app.js',
+  entry: './Uncompressed (Project files)/scripts/app.js',
   mode: 'development',
   output: {
     filename: 'bundle.js',
