@@ -1,36 +1,40 @@
----
-  name: Netlify Deployment
-  
-  on:
-    push:
-      branches:
-        - main
-  
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-  
-      env:  # Add this section to set environment variables for all steps
-        NODE_ENV: 'production'
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
-  
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v2
+name: Netlify Deployment
 
-        - name: Install dotenv-webpack
-          run: npm install dotenv-webpack  # Manual installation
-  
-        - name: Install dependencies
-          run: npm install
-  
-        - name: Build project
-          run: npm run build
-  
-        - name: Deploy to Netlify
-          uses: nwtgck/actions-netlify@v1
-          with:
-            publish-dir: ./dist
-            production-branch: main
-            github-token: ${{ secrets.GITHUB_TOKEN }}
-  
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+
+    # Caching dependencies
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build and Deploy to Netlify
+      uses: South-Paw/action-netlify-cli@1.0.1
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      with:
+        args: deploy --prod
+      
