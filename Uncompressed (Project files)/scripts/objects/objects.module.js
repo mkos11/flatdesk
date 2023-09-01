@@ -1,4 +1,4 @@
 (function () {
-  'use strict';
-  angular.module('app.objects', []);
-})();
+  'use strict'
+  angular.module('app.objects', [])
+})()

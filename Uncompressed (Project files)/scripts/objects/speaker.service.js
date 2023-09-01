@@ -1,25 +1,23 @@
 (function () {
-  'use strict';
+  'use strict'
 
-  angular.module('app.objects').factory('speakerService', speakerService);
+  angular.module('app.objects').factory('speakerService', speakerService)
 
-  speakerService.$inject = ['drawService'];
+  speakerService.$inject = ['drawService']
 
-  function speakerService(drawService) {
-
-    var service = {
-      drawObject: drawObject
-    };
+  function speakerService (drawService) {
+    const service = {
+      drawObject
+    }
 
     return service
 
-    function drawObject(x, y, z, objRotation, name) {
-
-      var speakerShape = new THREE.Shape();
-      drawService.createRoundedRectangle(speakerShape, 8, 20, 1.5);
-      var speakerMembraneShape = new THREE.Shape();
-      drawService.createRoundedRectangle(speakerMembraneShape, 6, 12, 0.5);
-      var speakerExtrudeSettings = {
+    function drawObject (x, y, z, objRotation, name) {
+      const speakerShape = new THREE.Shape()
+      drawService.createRoundedRectangle(speakerShape, 8, 20, 1.5)
+      const speakerMembraneShape = new THREE.Shape()
+      drawService.createRoundedRectangle(speakerMembraneShape, 6, 12, 0.5)
+      const speakerExtrudeSettings = {
         steps: 2,
         amount: 2,
         bevelEnabled: true,
@@ -27,7 +25,7 @@
         bevelSize: 1,
         bevelSegments: 10
       }
-      var speakerMembraneExtrudeSettings = {
+      const speakerMembraneExtrudeSettings = {
         steps: 1,
         amount: 0,
         bevelEnabled: true,
@@ -35,26 +33,26 @@
         bevelSize: 1,
         bevelSegments: 10
       }
-      var speakerGeometry = new THREE.ExtrudeGeometry(speakerShape, speakerExtrudeSettings)
-      var speakerMaterial = new THREE.MeshPhongMaterial({
+      const speakerGeometry = new THREE.ExtrudeGeometry(speakerShape, speakerExtrudeSettings)
+      const speakerMaterial = new THREE.MeshPhongMaterial({
         color: 0xecf0f1
-      });
-      var speakerMembraneGeometry = new THREE.ExtrudeGeometry(speakerMembraneShape, speakerMembraneExtrudeSettings)
+      })
+      const speakerMembraneGeometry = new THREE.ExtrudeGeometry(speakerMembraneShape, speakerMembraneExtrudeSettings)
 
-      var speakerMembraneMaterial = new THREE.MeshPhongMaterial({
+      const speakerMembraneMaterial = new THREE.MeshPhongMaterial({
         color: 0x373a3c
-      });
+      })
 
-      var speakerHolderShape = new THREE.Shape();
-      speakerHolderShape.moveTo(0.1, 3.5);
-      speakerHolderShape.lineTo(-2.8, -1.75);
-      speakerHolderShape.bezierCurveTo(-3.1, -2.85, -2.5, -3.5, -1.4, -3.5);
-      speakerHolderShape.lineTo(2.8, -3.5);
-      speakerHolderShape.lineTo(2.7, -3.3);
-      speakerHolderShape.lineTo(-1.4, -3.15);
-      speakerHolderShape.bezierCurveTo(-2.1, -3.05, -2.5, -2.45, -2.3, -1.75);
-      speakerHolderShape.lineTo(0.6, 3.5);
-      var speakerHolderExtrudeSettings = {
+      const speakerHolderShape = new THREE.Shape()
+      speakerHolderShape.moveTo(0.1, 3.5)
+      speakerHolderShape.lineTo(-2.8, -1.75)
+      speakerHolderShape.bezierCurveTo(-3.1, -2.85, -2.5, -3.5, -1.4, -3.5)
+      speakerHolderShape.lineTo(2.8, -3.5)
+      speakerHolderShape.lineTo(2.7, -3.3)
+      speakerHolderShape.lineTo(-1.4, -3.15)
+      speakerHolderShape.bezierCurveTo(-2.1, -3.05, -2.5, -2.45, -2.3, -1.75)
+      speakerHolderShape.lineTo(0.6, 3.5)
+      const speakerHolderExtrudeSettings = {
         steps: 2,
         amount: 5,
         bevelEnabled: false,
@@ -62,66 +60,63 @@
         bevelSize: 0.5,
         bevelSegments: 5
       }
-      var speakerHolderGeometry = new THREE.ExtrudeGeometry(speakerHolderShape, speakerHolderExtrudeSettings)
-      var speakerHolderMaterial = new THREE.MeshPhongMaterial({
+      const speakerHolderGeometry = new THREE.ExtrudeGeometry(speakerHolderShape, speakerHolderExtrudeSettings)
+      const speakerHolderMaterial = new THREE.MeshPhongMaterial({
         color: 0xecf0f1
-      });
+      })
 
-      var speakerMesh = new THREE.Mesh(speakerGeometry, speakerMaterial);
-      var speakerMembraneMesh = new THREE.Mesh(speakerMembraneGeometry, speakerMembraneMaterial);
-      var speakerHolderMesh = new THREE.Mesh(speakerHolderGeometry, speakerHolderMaterial);
-      speakerMembraneMesh.position.z = 1;
-      speakerMembraneMesh.position.y = 3;
-      speakerMesh.position.z = -1;
-      speakerMesh.rotation.x = -Math.PI / 16;
-      speakerMembraneMesh.rotation.x = -Math.PI / 16;
-      speakerHolderMesh.position.x = 2.5;
-      speakerHolderMesh.position.y = -10;
-      speakerHolderMesh.rotation.y = -Math.PI / 2;
-      var speaker = new THREE.Object3D();
-      speaker.add(speakerMesh);
-      speaker.add(speakerMembraneMesh);
-      speaker.add(speakerHolderMesh);
+      const speakerMesh = new THREE.Mesh(speakerGeometry, speakerMaterial)
+      const speakerMembraneMesh = new THREE.Mesh(speakerMembraneGeometry, speakerMembraneMaterial)
+      const speakerHolderMesh = new THREE.Mesh(speakerHolderGeometry, speakerHolderMaterial)
+      speakerMembraneMesh.position.z = 1
+      speakerMembraneMesh.position.y = 3
+      speakerMesh.position.z = -1
+      speakerMesh.rotation.x = -Math.PI / 16
+      speakerMembraneMesh.rotation.x = -Math.PI / 16
+      speakerHolderMesh.position.x = 2.5
+      speakerHolderMesh.position.y = -10
+      speakerHolderMesh.rotation.y = -Math.PI / 2
+      const speaker = new THREE.Object3D()
+      speaker.add(speakerMesh)
+      speaker.add(speakerMembraneMesh)
+      speaker.add(speakerHolderMesh)
 
-      var speakerTextureGeometry = new THREE.PlaneBufferGeometry(8, 14);
-      var speakerTexture = new THREE.TextureLoader().load('images/speakermesh.jpg');
-      speakerTexture.magFilter = THREE.NearestFilter;
-      speakerTexture.minFilter = THREE.LinearMipMapLinearFilter;
-      var speakerTextureMaterial = new THREE.MeshBasicMaterial({
+      const speakerTextureGeometry = new THREE.PlaneBufferGeometry(8, 14)
+      const speakerTexture = new THREE.TextureLoader().load('images/speakermesh.jpg')
+      speakerTexture.magFilter = THREE.NearestFilter
+      speakerTexture.minFilter = THREE.LinearMipMapLinearFilter
+      const speakerTextureMaterial = new THREE.MeshBasicMaterial({
         map: speakerTexture,
         blending: THREE.MultiplyBlending,
-        transparent: true,
-      });
+        transparent: true
+      })
 
-      var portfolioSpeakerTextureMesh = new THREE.Mesh(speakerTextureGeometry, speakerTextureMaterial);
-      portfolioSpeakerTextureMesh.position.z = 1.5;
-      portfolioSpeakerTextureMesh.position.y = 3;
-      portfolioSpeakerTextureMesh.rotation.x = -Math.PI / 16;
-      speaker.add(portfolioSpeakerTextureMesh);
+      const portfolioSpeakerTextureMesh = new THREE.Mesh(speakerTextureGeometry, speakerTextureMaterial)
+      portfolioSpeakerTextureMesh.position.z = 1.5
+      portfolioSpeakerTextureMesh.position.y = 3
+      portfolioSpeakerTextureMesh.rotation.x = -Math.PI / 16
+      speaker.add(portfolioSpeakerTextureMesh)
 
-      speaker.name = name;
+      speaker.name = name
 
       if (speaker.name == 'leftSpeaker') {
-
-
-
-        var diode = new THREE.Mesh(new THREE.SphereBufferGeometry(0.6, 32, 32), new THREE.MeshPhongMaterial({
+        const diode = new THREE.Mesh(new THREE.SphereBufferGeometry(0.6, 32, 32), new THREE.MeshPhongMaterial({
           color: 0x000000,
           transparent: true,
           opacity: 0.75,
           emissive: 0x500000
-        }));
-        diode.scale.set(0.5, 0.5, 0.5);
-        speaker.add(diode);
-        speaker.diode = diode;
+        }))
+        diode.scale.set(0.5, 0.5, 0.5)
+        speaker.add(diode)
+        speaker.diode = diode
 
-        speaker.rayReceiver = [];
-        speaker.rayReceiver.push(speakerHolderMesh);
-        speaker.rayReceiver.push(speakerMesh);
+        speaker.rayReceiver = []
+        speaker.rayReceiver.push(speakerHolderMesh)
+        speaker.rayReceiver.push(speakerMesh)
 
-        diode.position.z = 2.8;
-        diode.position.y = -6;
-        diode.rotation.x = -Math.PI / 16;
+        diode.position.z = 2.8
+        diode.position.y = -6
+        diode.rotation.x = -Math.PI / 16
 
         speaker.turnSpeakerOn = function () {
           TweenMax.to(diode.material.emissive, 0.05, {
@@ -129,7 +124,7 @@
             r: 0,
             g: 0.3,
             b: 0
-          });
+          })
         }
 
         speaker.turnSpeakerOff = function () {
@@ -138,22 +133,22 @@
             r: 0.3,
             g: 0,
             b: 0
-          });
+          })
         }
       }
 
       speaker.children.forEach(function (element) {
-        element.receiveShadow = true;
-        element.castShadow = true;
-        element.ancestor = speaker;
-      });
+        element.receiveShadow = true
+        element.castShadow = true
+        element.ancestor = speaker
+      })
 
-      speakerMembraneMesh.castShadow = false;
+      speakerMembraneMesh.castShadow = false
 
-      speaker.position.set(x, y, z);
-      speaker.rotation.set(0, objRotation * Math.PI / 180, 0);
+      speaker.position.set(x, y, z)
+      speaker.rotation.set(0, objRotation * Math.PI / 180, 0)
 
       return speaker
     }
   }
-})();
+})()

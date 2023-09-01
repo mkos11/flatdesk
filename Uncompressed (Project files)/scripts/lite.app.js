@@ -1,21 +1,20 @@
 angular
   .module('liteApp', [])
-  .controller('liteCtrl', liteCtrl);
-liteCtrl.$inject = ['$scope', '$http', '$window', '$timeout'];
+  .controller('liteCtrl', liteCtrl)
+liteCtrl.$inject = ['$scope', '$http', '$window', '$timeout']
 
-function liteCtrl($scope, $http, $window, $timeout) {
-  var vm = this;
+function liteCtrl ($scope, $http, $window, $timeout) {
+  const vm = this
 
   $http.get('config.json').then(function (res) {
-    vm.config = angular.fromJson(res.data);
-  });
-  var maxScroll = angular.element(document.querySelector('#wrapper'))[0].offsetHeight - $window.innerHeight;
+    vm.config = angular.fromJson(res.data)
+  })
+  const maxScroll = angular.element(document.querySelector('#wrapper'))[0].offsetHeight - $window.innerHeight
 
   angular.element($window).bind('scroll', function (event) {
-
     $timeout(function () {
-      vm.scrolled = this.pageYOffset / maxScroll;
-      $scope.$apply();
-    });
-  });
+      vm.scrolled = this.pageYOffset / maxScroll
+      $scope.$apply()
+    })
+  })
 }

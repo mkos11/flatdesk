@@ -16,18 +16,17 @@ angular
   //   }])
   .run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
 
-
   }])
   .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    $locationProvider.hashPrefix('');
+    $locationProvider.hashPrefix('')
     // $locationProvider.html5Mode({
     //   enabled: true
     // });
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/')
     $stateProvider
       .state('app', {
         url: '/',
-        templateUrl: 'templates/home.html',
+        templateUrl: 'templates/home.html'
       })
       .state('app.phone', {
         url: 'phone',
@@ -83,6 +82,4 @@ angular
           subtitle: 'personalResume'
         }
       })
-
-
-  }]);
+  }])
