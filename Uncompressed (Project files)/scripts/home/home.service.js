@@ -1,15 +1,13 @@
 (function () {
-  'use strict';
+  'use strict'
 
-  angular.module('app').factory('homeService', homeService);
+  angular.module('app').factory('homeService', homeService)
 
-  homeService.$inject = ['$q', '$filter', '$timeout', '$http'];
+  homeService.$inject = ['$q', '$filter', '$timeout', '$http']
 
-  function homeService($q, $filter, $timeout, $http) {
+  function homeService ($q, $filter, $timeout, $http) {
+    const service = {
 
-    var service = {
-
-    };
-
+    }
   }
-})();
+})()

@@ -1,4 +1,4 @@
 (function () {
-  'use strict';
-  angular.module('app.scene', []);
-})();
+  'use strict'
+  angular.module('app.scene', [])
+})()
