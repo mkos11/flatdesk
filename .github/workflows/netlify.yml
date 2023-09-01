@@ -21,8 +21,9 @@ jobs:
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
         with:
           publish-dir: ./dist
           production-branch: main
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-token: ${{ secrets.NETLIFY_TOKEN }}
