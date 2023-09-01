@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
+    "lint": "standard --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
