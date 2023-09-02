@@ -1,6 +1,6 @@
 {
+    "customSyntax": "postcss-scss",
     "rules": {
-        "customSyntax": "scss",
         "selector-pseudo-class-no-unknown": [
             true,
             {
