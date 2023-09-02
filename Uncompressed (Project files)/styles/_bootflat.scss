@@ -1009,6 +1009,7 @@ blockquote {
 .stepper .stepper-input {
   overflow: hidden;
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .stepper .stepper-input::-webkit-inner-spin-button,
@@ -1672,11 +1673,13 @@ blockquote {
     display: block;
     margin-bottom: 20px;
   }
+
   .pricing .unit.active {
     top: 0;
     margin-right: 0;
     margin-left: 0;
   }
+
   .pricing .unit.active .price-title h3 {
     font-size: 30px;
   }
@@ -1948,6 +1951,7 @@ blockquote {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
   }
+
   .nav-tabs.nav-justified>.active>a,
   .nav-tabs.nav-justified>.active>a:hover,
   .nav-tabs.nav-justified>.active>a:focus {
@@ -2154,16 +2158,20 @@ fieldset[disabled] .navbar-default .btn-link:focus,
 }
 
 @media (max-width: 767px) {
+
   .navbar-default .navbar-nav>li>a:hover,
   .navbar-default .navbar-nav>li>a:focus {
     background-color: #48cfad;
   }
+
   .navbar-default .navbar-nav .open .dropdown-menu>.divider {
     background-color: #48cfad;
   }
+
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: #26816a;
   }
+
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
@@ -2172,9 +2180,11 @@ fieldset[disabled] .navbar-default .btn-link:focus,
     color: white;
     background-color: #48cfad;
   }
+
   .navbar-default .navbar-nav .open .dropdown-menu>.dropdown-header {
     color: #26816a;
   }
+
   .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,
   .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus {
@@ -2258,16 +2268,20 @@ fieldset[disabled] .navbar-inverse .btn-link:focus,
 }
 
 @media (max-width: 767px) {
+
   .navbar-inverse .navbar-nav>li>a:hover,
   .navbar-inverse .navbar-nav>li>a:focus {
     background-color: black;
   }
+
   .navbar-inverse .navbar-nav .open .dropdown-menu>.divider {
     background-color: black;
   }
+
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
     color: #8c8c8c;
   }
+
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,
   .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a,
@@ -2276,9 +2290,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus,
     color: white;
     background-color: black;
   }
+
   .navbar-inverse .navbar-nav .open .dropdown-menu>.dropdown-header {
     color: #bfbfbf;
   }
+
   .navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a,
   .navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:focus {
@@ -2666,10 +2682,12 @@ a.list-group-item-danger:focus {
 }
 
 @media screen and (min-width: 768px) {
+
   .jumbotron,
   .container .jumbotron {
     padding: 0;
   }
+
   .jumbotron h1,
   .jumbotron .h1 {
     font-size: 28px;
@@ -2963,6 +2981,7 @@ a.list-group-item-danger:focus {
   .footer-logo {
     margin-bottom: 20px;
   }
+
   .footer-logo,
   .footer-nav {
     display: block;
@@ -3153,33 +3172,41 @@ a.list-group-item-danger:focus {
   .timeline dl:before {
     left: 60px;
   }
+
   .timeline dl dt {
     margin: 0 0 30px;
   }
+
   .timeline dl dd .circ {
     left: 60px;
   }
+
   .timeline dl dd .time {
     left: 0;
   }
+
   .timeline dl dd.pos-left .time {
     padding: 10px 0;
     margin-left: 0;
     text-align: left;
   }
+
   .timeline dl dd.pos-left .events {
     float: right;
     width: 84%;
   }
+
   .timeline dl dd.pos-left .events:before {
     left: -12px;
     border-color: transparent white transparent transparent;
   }
+
   .timeline dl dd.pos-right .time {
     padding: 10px 0;
     margin-left: 0;
     text-align: left;
   }
+
   .timeline dl dd.pos-right .events {
     float: right;
     width: 84%;
