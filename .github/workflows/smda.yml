@@ -1,9 +1,20 @@
-name: FlatDesk-CI/CD-Pipeline
+name: Robust-Merged-CI/CD-Pipeline
 
 on:
   push:
     branches:
       - main
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+env:
+  VALIDATE_ALL_CODEBASE: true
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  APPLY_FIXES: all
+  APPLY_FIXES_EVENT: pull_request
+  APPLY_FIXES_MODE: pull_request
 
 jobs:
   lint:
@@ -11,19 +22,21 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-      - name: Lint Code Base
-        uses: github/super-linter@v5
-        env:
-          DEFAULT_BRANCH: main
-          DISABLE_ERRORS: false
-          ESLINT_CONFIG_FILE: .eslintrc.json
-          HTML_CONFIG_FILE: .htmlhintrc
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SCSS_CONFIG_FILE: .stylelintrc.json
-          VALIDATE_ALL_CODEBASE: true
-          VALIDATE_SCSS: true
-          VALIDATE_HTML: true
-          VALIDATE_JAVASCRIPT_ES: true
+      - name: MegaLinter
+        id: ml
+        uses: nvuillam/mega-linter@v4
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: MegaLinter reports
+          path: megalinter-reports
+      - name: Create Pull Request with fixes
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "[MegaLinter] Apply linters fixes"
+          title: "[MegaLinter] Apply linters fixes"
+          branch: main
 
   build:
     runs-on: ubuntu-latest
@@ -34,7 +47,7 @@ jobs:
       - name: Use Node.js 16
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: "16"
       - name: Cache Yarn Dependencies
         uses: actions/cache@v3
         with:
@@ -55,5 +68,3 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-
-          
