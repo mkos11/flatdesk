@@ -28,7 +28,7 @@ concurrency:
 jobs:
   build:
     name: MegaLinter
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: write
       issues: write
