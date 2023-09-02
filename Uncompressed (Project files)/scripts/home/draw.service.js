@@ -30,7 +30,7 @@
     }
 
     function getDirection (value) {
-      if (value != 0) {
+      if (value !== 0) {
         return value / Math.abs(value)
       } else {
         return 1
@@ -47,19 +47,19 @@
       }
       const distance = camera.calculateDistance(object.objectWidth, object.objectHeight, maximum)
 
-      if (camera.model == 'Top') {
+      if (camera.model === 'Top') {
         object.distanceX = 0
         object.distanceY = distance
         object.distanceZ = 0
-      } else if (camera.model == 'Top Front') {
+      } else if (camera.model === 'Top Front') {
         object.distanceX = 0
         object.distanceY = distance / Math.sqrt(2)
         object.distanceZ = distance / Math.sqrt(2)
-      } else if (camera.model == 'Top Front Left') {
+      } else if (camera.model === 'Top Front Left') {
         object.distanceX = distance / Math.sqrt(3)
         object.distanceY = distance / Math.sqrt(3)
         object.distanceZ = distance / Math.sqrt(3)
-      } else if (camera.model == 'Top Front Right') {
+      } else if (camera.model === 'Top Front Right') {
         object.distanceX = distance / Math.sqrt(3)
         object.distanceY = distance / Math.sqrt(3)
         object.distanceZ = distance / Math.sqrt(3)
@@ -213,7 +213,7 @@
 
     function defaultHoverTween (object, scene, camera, t) {
       if (!scene.currentObject) {
-        if (object.position.y == object.defaultPosition.y && object.hovered) {
+        if (object.position.y === object.defaultPosition.y && object.hovered) {
           var hoverTimeline = new TimelineMax({
             onComplete: function () {
               if (object.hovered) {
@@ -281,7 +281,7 @@
               }, t)
             })
           }
-        } else if (object.position.y != object.defaultPosition.y && object.hovered) {
+        } else if (object.position.y !== object.defaultPosition.y && object.hovered) {
           const hoverBackTimeline = new TimelineMax({
             onComplete: function () {
               hoverTimeline.restart()
