@@ -1,88 +1,89 @@
-import * as THREE from 'three';
+var THREE = require("three");
 window.THREE = THREE;
 
+var angular = require("angular");
 angular
-  .module('app', [
-    'ui.router',
-    'ngAnimate',
-    'ui.bootstrap',
-    'ui.select',
-    'ngSanitize',
-    'ksSwiper',
-    'app.objects',
-    'app.scene',
-    'colorpicker.module',
-    'ngFileSaver'
+  .module("app", [
+    "ui.router",
+    "ngAnimate",
+    "ui.bootstrap",
+    "ui.select",
+    "ngSanitize",
+    "ksSwiper",
+    "app.objects",
+    "app.scene",
+    "colorpicker.module",
+    "ngFileSaver"
   ])
-  //   .config(['$locationProvider', '$qProvider', '$compileProvider', function ($locationProvider, $qProvider, $compileProvider) {
+//   .config(['$locationProvider', '$qProvider', '$compileProvider', function ($locationProvider, $qProvider, $compileProvider) {
 
-  //   }])
-  .run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
+//   }])
+  .run(["$rootScope", "$state", "$stateParams", function ($rootScope, $state, $stateParams) {
 
   }])
-  .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    $locationProvider.hashPrefix('')
+  .config(["$stateProvider", "$urlRouterProvider", "$locationProvider", function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $locationProvider.hashPrefix("")
     // $locationProvider.html5Mode({
     //   enabled: true
     // });
-    $urlRouterProvider.otherwise('/')
+    $urlRouterProvider.otherwise("/")
     $stateProvider
-      .state('app', {
-        url: '/',
-        templateUrl: 'templates/home.html'
+      .state("app", {
+        url: "/",
+        templateUrl: "templates/home.html"
       })
-      .state('app.phone', {
-        url: 'phone',
+      .state("app.phone", {
+        url: "phone",
         params: {
-          subtitle: 'phone'
+          subtitle: "phone"
         }
       })
-      .state('app.tablet', {
-        url: 'tablet',
+      .state("app.tablet", {
+        url: "tablet",
         params: {
-          subtitle: 'tablet'
+          subtitle: "tablet"
         }
       })
-      .state('app.portfolio1', {
-        url: 'portfolio1',
+      .state("app.portfolio1", {
+        url: "portfolio1",
         params: {
-          subtitle: 'portfolio1'
+          subtitle: "portfolio1"
         }
       })
-      .state('app.portfolio2', {
-        url: 'portfolio2',
+      .state("app.portfolio2", {
+        url: "portfolio2",
         params: {
-          subtitle: 'portfolio2'
+          subtitle: "portfolio2"
         }
       })
-      .state('app.portfolio3', {
-        url: 'portfolio3',
+      .state("app.portfolio3", {
+        url: "portfolio3",
         params: {
-          subtitle: 'portfolio3'
+          subtitle: "portfolio3"
         }
       })
-      .state('app.desktop', {
-        url: 'desktop',
+      .state("app.desktop", {
+        url: "desktop",
         params: {
-          subtitle: 'desktop'
+          subtitle: "desktop"
         }
       })
-      .state('app.postCard', {
-        url: 'postCard',
+      .state("app.postCard", {
+        url: "postCard",
         params: {
-          subtitle: 'postCard'
+          subtitle: "postCard"
         }
       })
-      .state('app.businessCard', {
-        url: 'businessCard',
+      .state("app.businessCard", {
+        url: "businessCard",
         params: {
-          subtitle: 'businessCard'
+          subtitle: "businessCard"
         }
       })
-      .state('app.personalResume', {
-        url: 'personalResume',
+      .state("app.personalResume", {
+        url: "personalResume",
         params: {
-          subtitle: 'personalResume'
+          subtitle: "personalResume"
         }
       })
   }])
