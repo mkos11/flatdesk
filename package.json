@@ -1,4 +1,7 @@
 {
   "name": "flatdesk",
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@3.6.3",
+  "dependencies": {
+    "postcss": "^8.4.29"
+  }
 }
