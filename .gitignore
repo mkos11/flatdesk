@@ -127,3 +127,4 @@ dist
 
 # pnpm
 *.pnpm*
+megalinter-reports/
