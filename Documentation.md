@@ -13,7 +13,7 @@ The sandbox environment is configured with Node.js to provide a consistent and r
 The update includes the generation of various documentation deliverables, including the audit trail, code changes, implementation plan, and test results. These documents provide a comprehensive overview of the update and its impact on the application.
 
 ```markdown
-# Insert the generated documentation deliverables here
+{1000-word summary}
 ```
 
 ## Code Changes
