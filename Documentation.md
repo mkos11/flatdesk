@@ -3,7 +3,7 @@
 The MegaLinter configuration file (.mega-linter.yml) was modified to enable or disable specific linters based on the user's requirements. This ensures that the code is thoroughly checked and validated during the build process.
 
 ```yaml
-1000-word summary goes here
+{1000-word summary}
 ```
 
 ## Sandbox environment configuration
