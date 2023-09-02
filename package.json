@@ -18,5 +18,8 @@
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "stylelint": "^15.10.3"
   }
 }
