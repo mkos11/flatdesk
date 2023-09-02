@@ -1,3 +1,6 @@
+import * as THREE from 'three';
+window.THREE = THREE;
+
 angular
   .module('app', [
     'ui.router',
