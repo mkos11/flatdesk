@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "checkly": "^4.1.0",
     "dotenv-webpack": "^8.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "checkly": "latest",
-    "ts-node": "latest",
-    "typescript": "latest"
+    "webpack-cli": "^5.1.4"
   }
 }
