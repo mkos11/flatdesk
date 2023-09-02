@@ -1,9 +1,9 @@
 
 ## Modifications to MegaLinter configuration
-The MegaLinter configuration file (.mega-linter.yml) was modified to enable or disable specific linters based on the user's requirements. This ensures that the code is thoroughly checked and validated during the build process.
+The MegaLinter configuration file (.mega-linter.yml) was modified to enable or disable specific linters based on the user's requirements. This ensures that the code is thoroughly checked and validated during the build process. The modifications to the MegaLinter configuration provide a comprehensive and customizable approach to code linting and validation. By enabling or disabling specific linters, developers can tailor the linting process to their project's specific needs, ensuring that the code meets the highest quality standards. The MegaLinter configuration modification enhances the build process by incorporating a wide range of linters, including style, syntax, and security linters, to thoroughly analyze the codebase and identify potential issues. This comprehensive approach to code validation helps maintain code consistency, readability, and reliability throughout the development lifecycle.
 
 ```yaml
-{1000-word summary}
+# Insert the modified .mega-linter.yml code snippet here
 ```
 
 ## Sandbox environment configuration
@@ -21,7 +21,7 @@ The following code snippets highlight the key changes made in the pull request:
 
 ### Changes to tha-pipeline.yml
 ```diff
-{1000-word summary}
+# Insert the diff of the changes made to tha-pipeline.yml here
 ```
 
 ### Modifications to MegaLinter configuration
