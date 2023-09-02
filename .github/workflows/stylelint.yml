@@ -18,8 +18,8 @@ jobs:
         node-version: '16'
 
     - name: Install dependencies
-      run: yarn
+      run: yarn install
 
     - name: Run Stylelint
-      run: npx stylelint "**/*.scss"
+      run: yarn stylelint "**/*.scss"
 

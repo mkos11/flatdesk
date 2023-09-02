@@ -1,6 +1,6 @@
 ---
   name: Vercel Deployment
-
+  
   on:
     push:
       branches:
@@ -17,19 +17,19 @@
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20.x'
+          node-version: '16'
   
       # Caching dependencies
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          path: ~/.cache/yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-yarn-
   
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
   
       - name: Run Vercel Action
         uses: amondnet/vercel-action@v20
@@ -37,3 +37,4 @@
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+  
