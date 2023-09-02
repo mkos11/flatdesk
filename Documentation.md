@@ -13,7 +13,7 @@ The sandbox environment is configured with Node.js to provide a consistent and r
 The update includes the generation of various documentation deliverables, including the audit trail, code changes, implementation plan, and test results. These documents provide a comprehensive overview of the update and its impact on the application.
 
 ```markdown
-{1000-word summary}
+# Insert the generated documentation deliverables here
 ```
 
 ## Code Changes
@@ -21,7 +21,7 @@ The following code snippets highlight the key changes made in the pull request:
 
 ### Changes to tha-pipeline.yml
 ```diff
-# Insert the diff of the changes made to tha-pipeline.yml here
+{1000-word summary}
 ```
 
 ### Modifications to MegaLinter configuration
