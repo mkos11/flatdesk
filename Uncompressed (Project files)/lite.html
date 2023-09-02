@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="" ng-app="liteApp">
 
 <head>
@@ -176,7 +176,6 @@
       text-decoration: none;
       font-size: 18px;
     }
-
   </style>
 </head>
 
@@ -193,7 +192,8 @@
 
     </section>
     <section class="section-2">
-      <div class="text-wrapper" style="transform:translateY(-{{ 40 - 40 * vm.scrolled }}%);opacity:{{vm.scrolled *2 }};">
+      <div class="text-wrapper"
+        style="transform:translateY(-{{ 40 - 40 * vm.scrolled }}%);opacity:{{vm.scrolled *2 }};">
         <p>
           {{vm.config.basic.about}}
         </p>
@@ -201,7 +201,8 @@
     </section>
     <section class="section-3">
       <ul>
-        <li ng-repeat="social in vm.config.basic.socials"><a target="_blank" href="{{social.url}}">{{social.name}}</a></li>
+        <li ng-repeat="social in vm.config.basic.socials"><a target="_blank" href="{{social.url}}">{{social.name}}</a>
+        </li>
       </ul>
       <div class="skew" style="transform: rotate({{20 * vm.scrolled}}deg);"></div>
     </section>
