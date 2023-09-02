@@ -1,4 +1,5 @@
-name: Robust-Merged-CI/CD-Pipeline
+---
+name: Tha Pipeline
 
 on:
   push:
