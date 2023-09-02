@@ -17,7 +17,7 @@ env:
   FLAVOR_SUGGESTIONS: true
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   JAVASCRIPT_DEFAULT_STYLE: prettier
-  PARALLEL: true
+  PARALLEL: false
   TYPESCRIPT_DEFAULT_STYLE: prettier
   VALIDATE_ALL_CODEBASE: true
 
@@ -38,6 +38,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          repository: 'svpermari0/flatdesk'
           fetch-depth: 0
 
       # Cache Yarn dependencies
@@ -59,6 +60,7 @@ jobs:
       # Create pull request if applicable
       - name: Create Pull Request with applied fixes
         id: cpr
+        if: ${{ success() }} || ${{ failure() }}
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -67,12 +69,14 @@ jobs:
           labels: bot
 
       - name: Create PR output
+        if: ${{ success() }} || ${{ failure() }}
         run: |
           echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
           echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
 
       # Push new commit if applicable
       - name: Prepare commit
+        if: ${{ success() }} || ${{ failure() }}
         run: sudo chown -Rc $UID .git/
       - name: Commit and push applied linter fixes
         uses: stefanzweifel/git-auto-commit-action@v4
