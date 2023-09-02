@@ -5,14 +5,12 @@
   "main": "app.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "lint": "standard --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "checkly": "^4.1.0",
     "dotenv-webpack": "^8.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
