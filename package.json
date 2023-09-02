@@ -3,5 +3,11 @@
   "packageManager": "yarn@3.6.3",
   "dependencies": {
     "postcss": "^8.4.29"
+  },
+  "devDependencies": {
+    "stylelint": "^15.10.3"
+  },
+  "scripts": {
+    "stylelint": "stylelint '**/*.scss'"
   }
 }
