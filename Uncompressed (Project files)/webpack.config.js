@@ -1,3 +1,0 @@
-const Dotenv = require('dotenv-webpack')
-
-// Rest of the existing code...
