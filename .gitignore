@@ -1,0 +1,80 @@
+# AngularJS
+.angular-cache/
+.angular-cli.json
+.angular-config.json
+.angular.json
+.karma.conf.js
+.protractor.conf.js
+
+# Angular Animate
+angular-animate/
+
+# Angular Bootstrap
+angular-bootstrap/
+
+# Angular Bootstrap Colorpicker
+angular-bootstrap-colorpicker/
+
+# Angular File Saver
+angular-file-saver/
+
+# Angular Sanitize
+angular-sanitize/
+
+# Angular Swiper
+angular-swiper/
+
+# Angular UI Router
+ui-router/
+
+# Angular UI Select
+angular-ui-select/
+
+# Animate.css
+animate.css/
+
+# Bower
+bower_components/
+
+# Bootstrap
+bootstrap/
+
+# Compiled binary files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Compiled output
+dist/
+build/
+
+# Dependency directories
+libs/
+
+# GSAP
+gsap/
+
+# IDE files
+.idea/
+.vscode/
+
+# Invision
+invision/
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Modernizr
+modernizr/
+
+# Node.js
+node_modules/
+
+# Start Bootstrap
+startbootstrap/
+
+# Three.js
+three.js/

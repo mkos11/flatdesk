@@ -1,0 +1,29 @@
+name: Compress Images
+
+on:
+  pull_request:
+    paths:
+      - '**.jpg'
+      - '**.png'
+      - '**.gif'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.image-cache  # Replace with the appropriate path for your project
+          key: ${{ runner.os }}-image-${{ hashFiles('**/*.jpg', '**/*.png', '**/*.gif') }}
+          restore-keys: |
+            ${{ runner.os }}-image-
+
+      - name: Compress Images
+        uses: calibreapp/image-actions@master
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}

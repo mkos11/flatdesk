@@ -1,0 +1,30 @@
+name: FTP Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.ftp-cache  # Replace with the appropriate path for your project
+        key: ${{ runner.os }}-ftp-${{ hashFiles('**/ftp-config.json') }}  # Replace with the appropriate file for hashing
+        restore-keys: |
+          ${{ runner.os }}-ftp-
+
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /path/to/your/server/directory

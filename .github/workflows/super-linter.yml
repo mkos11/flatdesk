@@ -1,0 +1,27 @@
+name: Snyk Security Scan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  snyk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.snyk-cache  # Replace with the appropriate path for your project
+          key: ${{ runner.os }}-snyk-${{ hashFiles('**/snyk-config.json') }}  # Replace with the appropriate file for hashing
+          restore-keys: |
+            ${{ runner.os }}-snyk-
+
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
