@@ -18,7 +18,7 @@ jobs:
   megalinter:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v3
 
       # Cache Node modules
@@ -39,6 +39,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      # Run MegaLinter
       - name: Run MegaLinter
         uses: oxsecurity/megalinter/flavors/cupcake/@v7.3.0
         env:
@@ -71,7 +72,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
-          commit_message: "[MegaLinter] Apply linters fixes"
+          commit_message: "[MegaLinter] Apply linter fixes"
           commit_user_name: megalinter-bot
           commit_user_email: nicolas.vuillamy@ox.security
 
