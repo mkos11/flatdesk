@@ -82,3 +82,10 @@ startbootstrap/
 # Three.js
 three.js/
 .aider*
+
+*.py[cod]
+.noteablekeep
+*.vectorized_content
+*.vectorized_metadata
+.tmp/
+__pycache__
