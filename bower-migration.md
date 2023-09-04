@@ -38,6 +38,6 @@ For components that don’t support CommonJS, you can find their CommonJS equiva
 
 But initially, the only change required in code is to change any reference to `bower_components` with `node_modules/@bower_components` (though you can link it somewhere else in postinstall script).
 
-___
+---
 
 If you have any questions or find any issues with this script, please post issue at [bower-away](https://github.com/sheerun/bower-away) repository.
