@@ -2,6 +2,10 @@ name: Push
 
 on: pull_request
 
+env:
+  APPLY_FIXES: all
+  VALIDATE_ALL_CODEBASE: true
+
 jobs:
   push:
     runs-on: ubuntu-latest
