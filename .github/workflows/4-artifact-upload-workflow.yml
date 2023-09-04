@@ -1,0 +1,29 @@
+name: Artifact Upload Workflow
+on:
+  push:
+  pull_request:
+    branches: [test]
+  workflow_run:
+    workflows: ["push", "pull_request"]
+    types:
+      - completed
+
+env:
+  APPLY_FIXES: all
+
+jobs:
+  upload_artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Upload MegaLinter artifacts
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: MegaLinter reports
+          path: |
+            megalinter-reports
+            mega-linter.log
