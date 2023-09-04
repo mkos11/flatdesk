@@ -1,0 +1,360 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Copy/Paste Detector Report</title><link href="styles/tailwind.css" rel="stylesheet"><link href="styles/prism.css" rel="stylesheet"></head><body class="bg-gray-100"><header class="bg-white shadow py-4"><div class="container mx-auto px-4"><h1 class="text-3xl font-semibold text-gray-800">jscpd - copy/paste report</h1></div></header><main class="container mx-auto my-8 p-4 bg-white shadow rounded"><section class="mb-8" id="dashboard"><h2 class="text-2xl font-semibold text-gray-700 mb-4">Dashboard</h2><div class="grid grid-cols-4 gap-4"><div class="bg-blue-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-blue-800 mb-2">Total Files</h3><span class="text-4xl font-bold text-blue-800">34</span></div><div class="bg-green-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-green-800 mb-2">Total Lines of Code</h3><span class="text-4xl font-bold text-green-800">5047</span></div><div class="bg-yellow-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-yellow-800 mb-2">Number of Clones</h3><span class="text-4xl font-bold text-yellow-800">12</span></div><div class="bg-red-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-red-800 mb-2">Duplicated Lines</h3><span class="text-4xl font-bold text-red-800">351 (6.95%)</span></div></div></section><section class="mb-8" id="formats"><h2 class="text-2xl font-semibold text-gray-700 mb-4">Formats with Duplications</h2><table class="w-full table-auto"><thead><tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"><th class="py-3 px-6 text-left">Format</th><th class="py-3 px-6 text-left">Files</th><th class="py-3 px-6 text-left">Lines</th><th class="py-3 px-6 text-left">Clones</th><th class="py-3 px-6 text-left">Duplicated Lines</th><th class="py-3 px-6 text-left">Duplicated Tokens</th></tr></thead><tbody><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#javascript-clones">javascript</a></td><td class="py-3 px-6">30</td><td class="py-3 px-6">3868</td><td class="py-3 px-6">12</td><td class="py-3 px-6">351</td><td class="py-3 px-6">3280</td></tr><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#scss-clones">scss</a></td><td class="py-3 px-6">3</td><td class="py-3 px-6">1171</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td></tr><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#php-clones">php</a></td><td class="py-3 px-6">1</td><td class="py-3 px-6">8</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td></tr></tbody></table></section><section class="mb-8" id="txt-clones"><a name="javascript-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">javascript</h2><div class="divide-y divide-gray-200 border-b-2"><div class="py-4"><p class="text-gray-600">.yarn/sdks/typescript/lib/tsserverlibrary.js (Line 1:1 - Line 12:6), .yarn/sdks/typescript/lib/typescript.js (Line 1:1 - Line 12:3)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn0" onclick="toggleCodeBlock('cloneGroup0', 'expandBtn0', 'collapseBtn0')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn0" onclick="toggleCodeBlock('cloneGroup0', 'expandBtn0', 'collapseBtn0')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup0"><code class="language-javascript text-sm text-gray-800">#!/usr/bin/env node
+
+const {existsSync} = require(`fs`);
+const {createRequire} = require(`module`);
+const {resolve} = require(`path`);
+
+const relPnpApiPath = &quot;../../../../.pnp.cjs&quot;;
+
+const absPnpApiPath = resolve(__dirname, relPnpApiPath);
+const absRequire = createRequire(absPnpApiPath);
+
+const</code></pre></div><div class="py-4"><p class="text-gray-600">.yarn/sdks/typescript/lib/tsserver.js (Line 1:1 - Line 219:74), .yarn/sdks/typescript/lib/typescript.js (Line 1:1 - Line 219:81)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn1" onclick="toggleCodeBlock('cloneGroup1', 'expandBtn1', 'collapseBtn1')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn1" onclick="toggleCodeBlock('cloneGroup1', 'expandBtn1', 'collapseBtn1')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup1"><code class="language-javascript text-sm text-gray-800">#!/usr/bin/env node
+
+const {existsSync} = require(`fs`);
+const {createRequire} = require(`module`);
+const {resolve} = require(`path`);
+
+const relPnpApiPath = &quot;../../../../.pnp.cjs&quot;;
+
+const absPnpApiPath = resolve(__dirname, relPnpApiPath);
+const absRequire = createRequire(absPnpApiPath);
+
+const moduleWrapper = tsserver =&gt; {
+  if (!process.versions.pnp) {
+    return tsserver;
+  }
+
+  const {isAbsolute} = require(`path`);
+  const pnpApi = require(`pnpapi`);
+
+  const isVirtual = str =&gt; str.match(/\/(\$\$virtual|__virtual__)\//);
+  const isPortal = str =&gt; str.startsWith(&quot;portal:/&quot;);
+  const normalize = str =&gt; str.replace(/\\/g, `/`).replace(/^\/?/, `/`);
+
+  const dependencyTreeRoots = new Set(pnpApi.getDependencyTreeRoots().map(locator =&gt; {
+    return `${locator.name}@${locator.reference}`;
+  }));
+
+  // VSCode sends the zip paths to TS using the &quot;zip://&quot; prefix, that TS
+  // doesn't understand. This layer makes sure to remove the protocol
+  // before forwarding it to TS, and to add it back on all returned paths.
+
+  function toEditorPath(str) {
+    // We add the `zip:` prefix to both `.zip/` paths and virtual paths
+    if (isAbsolute(str) &amp;&amp; !str.match(/^\^?(zip:|\/zip\/)/) &amp;&amp; (str.match(/\.zip\//) || isVirtual(str))) {
+      // We also take the opportunity to turn virtual paths into physical ones;
+      // this makes it much easier to work with workspaces that list peer
+      // dependencies, since otherwise Ctrl+Click would bring us to the virtual
+      // file instances instead of the real ones.
+      //
+      // We only do this to modules owned by the the dependency tree roots.
+      // This avoids breaking the resolution when jumping inside a vendor
+      // with peer dep (otherwise jumping into react-dom would show resolution
+      // errors on react).
+      //
+      const resolved = isVirtual(str) ? pnpApi.resolveVirtual(str) : str;
+      if (resolved) {
+        const locator = pnpApi.findPackageLocator(resolved);
+        if (locator &amp;&amp; (dependencyTreeRoots.has(`${locator.name}@${locator.reference}`) || isPortal(locator.reference))) {
+          str = resolved;
+        }
+      }
+
+      str = normalize(str);
+
+      if (str.match(/\.zip\//)) {
+        switch (hostInfo) {
+          // Absolute VSCode `Uri.fsPath`s need to start with a slash.
+          // VSCode only adds it automatically for supported schemes,
+          // so we have to do it manually for the `zip` scheme.
+          // The path needs to start with a caret otherwise VSCode doesn't handle the protocol
+          //
+          // Ref: https://github.com/microsoft/vscode/issues/105014#issuecomment-686760910
+          //
+          // 2021-10-08: VSCode changed the format in 1.61.
+          // Before | ^zip:/c:/foo/bar.zip/package.json
+          // After  | ^/zip//c:/foo/bar.zip/package.json
+          //
+          // 2022-04-06: VSCode changed the format in 1.66.
+          // Before | ^/zip//c:/foo/bar.zip/package.json
+          // After  | ^/zip/c:/foo/bar.zip/package.json
+          //
+          // 2022-05-06: VSCode changed the format in 1.68
+          // Before | ^/zip/c:/foo/bar.zip/package.json
+          // After  | ^/zip//c:/foo/bar.zip/package.json
+          //
+          case `vscode &lt;1.61`: {
+            str = `^zip:${str}`;
+          } break;
+
+          case `vscode &lt;1.66`: {
+            str = `^/zip/${str}`;
+          } break;
+
+          case `vscode &lt;1.68`: {
+            str = `^/zip${str}`;
+          } break;
+
+          case `vscode`: {
+            str = `^/zip/${str}`;
+          } break;
+
+          // To make &quot;go to definition&quot; work,
+          // We have to resolve the actual file system path from virtual path
+          // and convert scheme to supported by [vim-rzip](https://github.com/lbrayner/vim-rzip)
+          case `coc-nvim`: {
+            str = normalize(resolved).replace(/\.zip\//, `.zip::`);
+            str = resolve(`zipfile:${str}`);
+          } break;
+
+          // Support neovim native LSP and [typescript-language-server](https://github.com/theia-ide/typescript-language-server)
+          // We have to resolve the actual file system path from virtual path,
+          // everything else is up to neovim
+          case `neovim`: {
+            str = normalize(resolved).replace(/\.zip\//, `.zip::`);
+            str = `zipfile://${str}`;
+          } break;
+
+          default: {
+            str = `zip:${str}`;
+          } break;
+        }
+      } else {
+        str = str.replace(/^\/?/, process.platform === `win32` ? `` : `/`);
+      }
+    }
+
+    return str;
+  }
+
+  function fromEditorPath(str) {
+    switch (hostInfo) {
+      case `coc-nvim`: {
+        str = str.replace(/\.zip::/, `.zip/`);
+        // The path for coc-nvim is in format of /&lt;pwd&gt;/zipfile:/&lt;pwd&gt;/.yarn/...
+        // So in order to convert it back, we use .* to match all the thing
+        // before `zipfile:`
+        return process.platform === `win32`
+          ? str.replace(/^.*zipfile:\//, ``)
+          : str.replace(/^.*zipfile:/, ``);
+      } break;
+
+      case `neovim`: {
+        str = str.replace(/\.zip::/, `.zip/`);
+        // The path for neovim is in format of zipfile:///&lt;pwd&gt;/.yarn/...
+        return str.replace(/^zipfile:\/\//, ``);
+      } break;
+
+      case `vscode`:
+      default: {
+        return str.replace(/^\^?(zip:|\/zip(\/ts-nul-authority)?)\/+/, process.platform === `win32` ? `` : `/`)
+      } break;
+    }
+  }
+
+  // Force enable 'allowLocalPluginLoads'
+  // TypeScript tries to resolve plugins using a path relative to itself
+  // which doesn't work when using the global cache
+  // https://github.com/microsoft/TypeScript/blob/1b57a0395e0bff191581c9606aab92832001de62/src/server/project.ts#L2238
+  // VSCode doesn't want to enable 'allowLocalPluginLoads' due to security concerns but
+  // TypeScript already does local loads and if this code is running the user trusts the workspace
+  // https://github.com/microsoft/vscode/issues/45856
+  const ConfiguredProject = tsserver.server.ConfiguredProject;
+  const {enablePluginsWithOptions: originalEnablePluginsWithOptions} = ConfiguredProject.prototype;
+  ConfiguredProject.prototype.enablePluginsWithOptions = function() {
+    this.projectService.allowLocalPluginLoads = true;
+    return originalEnablePluginsWithOptions.apply(this, arguments);
+  };
+
+  // And here is the point where we hijack the VSCode &lt;-&gt; TS communications
+  // by adding ourselves in the middle. We locate everything that looks
+  // like an absolute path of ours and normalize it.
+
+  const Session = tsserver.server.Session;
+  const {onMessage: originalOnMessage, send: originalSend} = Session.prototype;
+  let hostInfo = `unknown`;
+
+  Object.assign(Session.prototype, {
+    onMessage(/** @type {string | object} */ message) {
+      const isStringMessage = typeof message === 'string';
+      const parsedMessage = isStringMessage ? JSON.parse(message) : message;
+
+      if (
+        parsedMessage != null &amp;&amp;
+        typeof parsedMessage === `object` &amp;&amp;
+        parsedMessage.arguments &amp;&amp;
+        typeof parsedMessage.arguments.hostInfo === `string`
+      ) {
+        hostInfo = parsedMessage.arguments.hostInfo;
+        if (hostInfo === `vscode` &amp;&amp; process.env.VSCODE_IPC_HOOK) {
+          const [, major, minor] = (process.env.VSCODE_IPC_HOOK.match(
+            // The RegExp from https://semver.org/ but without the caret at the start
+            /(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/
+          ) ?? []).map(Number)
+
+          if (major === 1) {
+            if (minor &lt; 61) {
+              hostInfo += ` &lt;1.61`;
+            } else if (minor &lt; 66) {
+              hostInfo += ` &lt;1.66`;
+            } else if (minor &lt; 68) {
+              hostInfo += ` &lt;1.68`;
+            }
+          }
+        }
+      }
+
+      const processedMessageJSON = JSON.stringify(parsedMessage, (key, value) =&gt; {
+        return typeof value === 'string' ? fromEditorPath(value) : value;
+      });
+
+      return originalOnMessage.call(
+        this,
+        isStringMessage ? processedMessageJSON : JSON.parse(processedMessageJSON)
+      );
+    },
+
+    send(/** @type {any} */ msg) {
+      return originalSend.call(this, JSON.parse(JSON.stringify(msg, (key, value) =&gt; {
+        return typeof value === `string` ? toEditorPath(value) : value;
+      })));
+    }
+  });
+
+  return tsserver;
+};
+
+if (existsSync(absPnpApiPath)) {
+  if (!process.versions.pnp) {
+    // Setup the environment to be able to require typescript/lib/tsserver.js</code></pre></div><div class="py-4"><p class="text-gray-600">.yarn/sdks/typescript/lib/tsc.js (Line 1:1 - Line 14:69), .yarn/sdks/typescript/lib/typescript.js (Line 1:1 - Line 14:76)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn2" onclick="toggleCodeBlock('cloneGroup2', 'expandBtn2', 'collapseBtn2')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn2" onclick="toggleCodeBlock('cloneGroup2', 'expandBtn2', 'collapseBtn2')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup2"><code class="language-javascript text-sm text-gray-800">#!/usr/bin/env node
+
+const {existsSync} = require(`fs`);
+const {createRequire} = require(`module`);
+const {resolve} = require(`path`);
+
+const relPnpApiPath = &quot;../../../../.pnp.cjs&quot;;
+
+const absPnpApiPath = resolve(__dirname, relPnpApiPath);
+const absRequire = createRequire(absPnpApiPath);
+
+if (existsSync(absPnpApiPath)) {
+  if (!process.versions.pnp) {
+    // Setup the environment to be able to require typescript/lib/tsc.js</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/objects/postCard.service.js (Line 74:7 - Line 82:6), scripts/objects/postCard.service.js (Line 18:7 - Line 26:4)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn3" onclick="toggleCodeBlock('cloneGroup3', 'expandBtn3', 'collapseBtn3')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn3" onclick="toggleCodeBlock('cloneGroup3', 'expandBtn3', 'collapseBtn3')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup3"><code class="language-javascript text-sm text-gray-800">const postCardTexture = new THREE.TextureLoader().load('images/postcard.jpg')
+      postCardTexture.magFilter = THREE.NearestFilter
+      postCardTexture.minFilter = THREE.LinearMipMapLinearFilter
+      postCardTexture.wrapS = THREE.RepeatWrapping
+      postCardTexture.wrapT = THREE.RepeatWrapping
+      postCardTexture.repeat.set(1, 0.703125)
+      postCardTexture.offset.y = (1 - 0.703125) / 2
+
+      const</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/objects/desktop.service.js (Line 198:2 - Line 207:7), scripts/objects/desktop.service.js (Line 159:2 - Line 168:8)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn4" onclick="toggleCodeBlock('cloneGroup4', 'expandBtn4', 'collapseBtn4')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn4" onclick="toggleCodeBlock('cloneGroup4', 'expandBtn4', 'collapseBtn4')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup4"><code class="language-javascript text-sm text-gray-800">desktop.screen.distance)
+            defer.resolve({
+              width: (pixelAspect * desktop.screen.width),
+              height: (pixelAspect * desktop.screen.height),
+              calculatedScale: (pixelAspect * desktop.screen.height) / 568
+            })
+          }
+        })
+
+        timeline.to(camera</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/objects/businessCard.service.js (Line 77:7 - Line 86:6), scripts/objects/businessCard.service.js (Line 18:7 - Line 26:4)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn5" onclick="toggleCodeBlock('cloneGroup5', 'expandBtn5', 'collapseBtn5')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn5" onclick="toggleCodeBlock('cloneGroup5', 'expandBtn5', 'collapseBtn5')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup5"><code class="language-javascript text-sm text-gray-800">const businessCardTexture = new THREE.TextureLoader().load('images/businesscard.jpg')
+      businessCardTexture.magFilter = THREE.NearestFilter
+      businessCardTexture.minFilter = THREE.LinearMipMapLinearFilter
+
+      businessCardTexture.wrapS = THREE.RepeatWrapping
+      businessCardTexture.wrapT = THREE.RepeatWrapping
+      businessCardTexture.repeat.set(0.9, 1)
+      businessCardTexture.offset.x = 0.05
+
+      const</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/home/home.controller.js (Line 548:8 - Line 560:2), scripts/home/home.controller.js (Line 535:7 - Line 548:8)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn6" onclick="toggleCodeBlock('cloneGroup6', 'expandBtn6', 'collapseBtn6')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn6" onclick="toggleCodeBlock('cloneGroup6', 'expandBtn6', 'collapseBtn6')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup6"><code class="language-javascript text-sm text-gray-800">.forEach(function (element) {
+      scene.add(element);
+      if (element.rayReceiver) {
+        if (element.rayReceiver.length &gt; 0) {
+          element.rayReceiver.forEach(function (child) {
+            raycastingObjects.push(child);
+          })
+        } else {
+          raycastingObjects.push(element.rayReceiver);
+        }
+      }
+    });
+  }</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/home/home.controller.js (Line 674:17 - Line 680:18), scripts/home/home.controller.js (Line 668:12 - Line 674:17)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn7" onclick="toggleCodeBlock('cloneGroup7', 'expandBtn7', 'collapseBtn7')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn7" onclick="toggleCodeBlock('cloneGroup7', 'expandBtn7', 'collapseBtn7')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup7"><code class="language-javascript text-sm text-gray-800">) {
+        TweenMax.to(camera.position, 0.5 + timeDelay, {
+          x: camera.defaultPosition.x + 10 * mouse.x,
+          z: camera.defaultPosition.z + 10 * mouse.x,
+          y: camera.defaultPosition.y + 10 * mouse.y
+        });
+      } else if (camera.model == 'Top Front Right'</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/home/draw.service.js (Line 323:15 - Line 351:2), scripts/home/draw.service.js (Line 255:15 - Line 284:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn8" onclick="toggleCodeBlock('cloneGroup8', 'expandBtn8', 'collapseBtn8')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn8" onclick="toggleCodeBlock('cloneGroup8', 'expandBtn8', 'collapseBtn8')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup8"><code class="language-javascript text-sm text-gray-800">hoverTimeline.to(element.position, t, {
+                ease: Power1.easeIn,
+                x: element.hoverDestinationPosition.x,
+                y: element.hoverDestinationPosition.y,
+                z: element.hoverDestinationPosition.z
+              }, 0)
+
+              hoverTimeline.to(element.rotation, t, {
+                ease: Power1.easeIn,
+                x: element.hoverDestinationRotation.x,
+                y: element.hoverDestinationRotation.y,
+                z: element.hoverDestinationRotation.z
+              }, 0)
+
+              hoverTimeline.to(element.position, t, {
+                ease: Power1.easeIn,
+                x: element.defaultPosition.x,
+                y: element.defaultPosition.y,
+                z: element.defaultPosition.z
+              }, t)
+
+              hoverTimeline.to(element.rotation, t, {
+                ease: Power1.easeIn,
+                x: element.defaultRotation.x,
+                y: element.defaultRotation.y,
+                z: element.defaultRotation.z
+              }, t)
+            })
+          };</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/home/draw.service.js (Line 353:11 - Line 380:2), scripts/home/draw.service.js (Line 225:11 - Line 253:3)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn9" onclick="toggleCodeBlock('cloneGroup9', 'expandBtn9', 'collapseBtn9')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn9" onclick="toggleCodeBlock('cloneGroup9', 'expandBtn9', 'collapseBtn9')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup9"><code class="language-javascript text-sm text-gray-800">hoverTimeline.to(object.position, t, {
+            ease: Power1.easeInOut,
+            x: object.hoverDestinationPosition.x,
+            y: object.hoverDestinationPosition.y,
+            z: object.hoverDestinationPosition.z
+          }, 0)
+
+          hoverTimeline.to(object.rotation, t, {
+            ease: Power1.easeInOut,
+            x: object.hoverDestinationRotation.x,
+            y: object.hoverDestinationRotation.y,
+            z: object.hoverDestinationRotation.z
+          }, 0)
+
+          hoverTimeline.to(object.position, t, {
+            ease: Power1.easeInOut,
+            x: object.defaultPosition.x,
+            y: object.defaultPosition.y,
+            z: object.defaultPosition.z
+          }, t)
+
+          hoverTimeline.to(object.rotation, t, {
+            ease: Power1.easeInOut,
+            x: object.defaultRotation.x,
+            y: object.defaultRotation.y,
+            z: object.defaultRotation.z
+          }, t)
+        }</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/home/draw.service.js (Line 383:9 - Line 388:2), scripts/home/draw.service.js (Line 294:18 - Line 299:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn10" onclick="toggleCodeBlock('cloneGroup10', 'expandBtn10', 'collapseBtn10')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn10" onclick="toggleCodeBlock('cloneGroup10', 'expandBtn10', 'collapseBtn10')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup10"><code class="language-javascript text-sm text-gray-800">.to(object.position, (object.position.y - object.defaultPosition.y) / (object.hoverDestinationPosition.y - object.defaultPosition.y) * t, {
+            ease: Power1.easeInOut,
+            x: object.defaultPosition.x,
+            y: object.defaultPosition.y,
+            z: object.defaultPosition.z
+          })</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/home/draw.service.js (Line 390:9 - Line 395:2), scripts/home/draw.service.js (Line 301:18 - Line 306:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn11" onclick="toggleCodeBlock('cloneGroup11', 'expandBtn11', 'collapseBtn11')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn11" onclick="toggleCodeBlock('cloneGroup11', 'expandBtn11', 'collapseBtn11')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup11"><code class="language-javascript text-sm text-gray-800">.to(object.rotation, (object.position.y - object.defaultPosition.y) / (object.hoverDestinationPosition.y - object.defaultPosition.y) * t, {
+            ease: Power1.easeInOut,
+            x: object.defaultRotation.x,
+            y: object.defaultRotation.y,
+            z: object.defaultRotation.z
+          })</code></pre></div><!-- Add more clone groups for .txt format as needed         // Add more clone groups for .txt format as needed--></div><a name="scss-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">scss</h2><div class="divide-y divide-gray-200 border-b-2"><!-- Add more clone groups for .txt format as needed         // Add more clone groups for .txt format as needed--></div><a name="php-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">php</h2><div class="divide-y divide-gray-200 border-b-2"><!-- Add more clone groups for .txt format as needed         // Add more clone groups for .txt format as needed--></div></section><!-- Add more sections for other formats and clone groups as needed--></main><footer class="bg-white shadow mt-8 py-4"><div class="container mx-auto px-4 text-center"><p class="text-sm text-gray-600">This report is generated by jscpd, an open-source copy/paste detector.</p><p class="text-sm text-gray-600">jscpd is licensed under the MIT License.</p><a class="text-blue-500 text-sm" href="https://github.com/kucherenko/jscpd" target="_blank" rel="noopener noreferrer">View jscpd on GitHub</a></div></footer><script src="js/prism.js"></script><script>function toggleCodeBlock(codeBlockId, expandBtnId, collapseBtnId) {
+  const codeBlock = document.getElementById(codeBlockId);
+  const expandBtn = document.getElementById(expandBtnId);
+  const collapseBtn = document.getElementById(collapseBtnId);
+
+  codeBlock.classList.toggle('hidden');
+  expandBtn.classList.toggle('hidden');
+  collapseBtn.classList.toggle('hidden');
+}</script></body></html>

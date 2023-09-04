@@ -1,0 +1,910 @@
+{
+  "statistics": {
+    "detectionDate": "2023-09-04T04:52:15.046Z",
+    "formats": {
+      "javascript": {
+        "sources": {
+          ".yarn/sdks/typescript/lib/typescript.js": {
+            "lines": 19,
+            "tokens": 150,
+            "sources": 1,
+            "clones": 3,
+            "duplicatedLines": 242,
+            "duplicatedTokens": 2097,
+            "percentage": 1273.68,
+            "percentageTokens": 1398,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          ".yarn/sdks/typescript/lib/tsserverlibrary.js": {
+            "lines": 224,
+            "tokens": 1919,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 11,
+            "duplicatedTokens": 93,
+            "percentage": 4.91,
+            "percentageTokens": 4.85,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          ".yarn/sdks/typescript/lib/tsserver.js": {
+            "lines": 224,
+            "tokens": 1919,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 218,
+            "duplicatedTokens": 1885,
+            "percentage": 97.32,
+            "percentageTokens": 98.23,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          ".yarn/sdks/typescript/lib/tsc.js": {
+            "lines": 19,
+            "tokens": 150,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 13,
+            "duplicatedTokens": 119,
+            "percentage": 68.42,
+            "percentageTokens": 79.33,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/scene/scene.module.js": {
+            "lines": 3,
+            "tokens": 26,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/scene/light.service.js": {
+            "lines": 48,
+            "tokens": 345,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/scene/background.service.js": {
+            "lines": 49,
+            "tokens": 530,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/tablet.service.js": {
+            "lines": 132,
+            "tokens": 1306,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/tableLamp.service.js": {
+            "lines": 199,
+            "tokens": 2101,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/speaker.service.js": {
+            "lines": 153,
+            "tokens": 1433,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/postCard.service.js": {
+            "lines": 156,
+            "tokens": 1663,
+            "sources": 1,
+            "clones": 2,
+            "duplicatedLines": 16,
+            "duplicatedTokens": 198,
+            "percentage": 10.26,
+            "percentageTokens": 11.91,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/portfolio.service.js": {
+            "lines": 219,
+            "tokens": 2366,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/phone.service.js": {
+            "lines": 153,
+            "tokens": 1556,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/personalResume.service.js": {
+            "lines": 168,
+            "tokens": 2381,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/objects.module.js": {
+            "lines": 3,
+            "tokens": 26,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/mouse.service.js": {
+            "lines": 44,
+            "tokens": 354,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/keyboard.service.js": {
+            "lines": 83,
+            "tokens": 720,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/desktop.service.js": {
+            "lines": 232,
+            "tokens": 2759,
+            "sources": 1,
+            "clones": 2,
+            "duplicatedLines": 18,
+            "duplicatedTokens": 170,
+            "percentage": 7.76,
+            "percentageTokens": 6.16,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/desk.service.js": {
+            "lines": 59,
+            "tokens": 725,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/cup.service.js": {
+            "lines": 78,
+            "tokens": 798,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/objects/businessCard.service.js": {
+            "lines": 158,
+            "tokens": 1698,
+            "sources": 1,
+            "clones": 2,
+            "duplicatedLines": 18,
+            "duplicatedTokens": 180,
+            "percentage": 11.39,
+            "percentageTokens": 10.6,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/home/home.service.js": {
+            "lines": 12,
+            "tokens": 89,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/home/home.controller.js": {
+            "lines": 794,
+            "tokens": 8794,
+            "sources": 1,
+            "clones": 4,
+            "duplicatedLines": 36,
+            "duplicatedTokens": 420,
+            "percentage": 4.53,
+            "percentageTokens": 4.78,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/home/draw.service.js": {
+            "lines": 418,
+            "tokens": 4388,
+            "sources": 1,
+            "clones": 8,
+            "duplicatedLines": 130,
+            "duplicatedTokens": 1398,
+            "percentage": 31.1,
+            "percentageTokens": 31.86,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/home/desktop.controller.js": {
+            "lines": 30,
+            "tokens": 300,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/home/configurator.controller.js": {
+            "lines": 62,
+            "tokens": 595,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/home/app.controller.js": {
+            "lines": 15,
+            "tokens": 145,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/lite.app.js": {
+            "lines": 19,
+            "tokens": 202,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/directives.js": {
+            "lines": 11,
+            "tokens": 97,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "scripts/app.js": {
+            "lines": 84,
+            "tokens": 495,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 3868,
+          "tokens": 40030,
+          "sources": 30,
+          "clones": 12,
+          "duplicatedLines": 351,
+          "duplicatedTokens": 3280,
+          "percentage": 9.07,
+          "percentageTokens": 8.19,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      },
+      "scss": {
+        "sources": {
+          "styles/main.scss": {
+            "lines": 890,
+            "tokens": 4841,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "styles/lite.scss": {
+            "lines": 150,
+            "tokens": 876,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "styles/_reset.scss": {
+            "lines": 131,
+            "tokens": 141,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 1171,
+          "tokens": 5858,
+          "sources": 3,
+          "clones": 0,
+          "duplicatedLines": 0,
+          "duplicatedTokens": 0,
+          "percentage": 0,
+          "percentageTokens": 0,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      },
+      "php": {
+        "sources": {
+          "mailscript.php": {
+            "lines": 8,
+            "tokens": 72,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 8,
+          "tokens": 72,
+          "sources": 1,
+          "clones": 0,
+          "duplicatedLines": 0,
+          "duplicatedTokens": 0,
+          "percentage": 0,
+          "percentageTokens": 0,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      }
+    },
+    "total": {
+      "lines": 5047,
+      "tokens": 45960,
+      "sources": 34,
+      "clones": 12,
+      "duplicatedLines": 351,
+      "duplicatedTokens": 3280,
+      "percentage": 6.95,
+      "percentageTokens": 7.14,
+      "newDuplicatedLines": 0,
+      "newClones": 0
+    }
+  },
+  "duplicates": [
+    {
+      "format": "javascript",
+      "lines": 12,
+      "fragment": "#!/usr/bin/env node\n\nconst {existsSync} = require(`fs`);\nconst {createRequire} = require(`module`);\nconst {resolve} = require(`path`);\n\nconst relPnpApiPath = \"../../../../.pnp.cjs\";\n\nconst absPnpApiPath = resolve(__dirname, relPnpApiPath);\nconst absRequire = createRequire(absPnpApiPath);\n\nconst",
+      "tokens": 0,
+      "firstFile": {
+        "name": ".yarn/sdks/typescript/lib/tsserverlibrary.js",
+        "start": 1,
+        "end": 12,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 12,
+          "column": 6,
+          "position": 93
+        }
+      },
+      "secondFile": {
+        "name": ".yarn/sdks/typescript/lib/typescript.js",
+        "start": 1,
+        "end": 12,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 12,
+          "column": 3,
+          "position": 93
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 219,
+      "fragment": "#!/usr/bin/env node\n\nconst {existsSync} = require(`fs`);\nconst {createRequire} = require(`module`);\nconst {resolve} = require(`path`);\n\nconst relPnpApiPath = \"../../../../.pnp.cjs\";\n\nconst absPnpApiPath = resolve(__dirname, relPnpApiPath);\nconst absRequire = createRequire(absPnpApiPath);\n\nconst moduleWrapper = tsserver => {\n  if (!process.versions.pnp) {\n    return tsserver;\n  }\n\n  const {isAbsolute} = require(`path`);\n  const pnpApi = require(`pnpapi`);\n\n  const isVirtual = str => str.match(/\\/(\\$\\$virtual|__virtual__)\\//);\n  const isPortal = str => str.startsWith(\"portal:/\");\n  const normalize = str => str.replace(/\\\\/g, `/`).replace(/^\\/?/, `/`);\n\n  const dependencyTreeRoots = new Set(pnpApi.getDependencyTreeRoots().map(locator => {\n    return `${locator.name}@${locator.reference}`;\n  }));\n\n  // VSCode sends the zip paths to TS using the \"zip://\" prefix, that TS\n  // doesn't understand. This layer makes sure to remove the protocol\n  // before forwarding it to TS, and to add it back on all returned paths.\n\n  function toEditorPath(str) {\n    // We add the `zip:` prefix to both `.zip/` paths and virtual paths\n    if (isAbsolute(str) && !str.match(/^\\^?(zip:|\\/zip\\/)/) && (str.match(/\\.zip\\//) || isVirtual(str))) {\n      // We also take the opportunity to turn virtual paths into physical ones;\n      // this makes it much easier to work with workspaces that list peer\n      // dependencies, since otherwise Ctrl+Click would bring us to the virtual\n      // file instances instead of the real ones.\n      //\n      // We only do this to modules owned by the the dependency tree roots.\n      // This avoids breaking the resolution when jumping inside a vendor\n      // with peer dep (otherwise jumping into react-dom would show resolution\n      // errors on react).\n      //\n      const resolved = isVirtual(str) ? pnpApi.resolveVirtual(str) : str;\n      if (resolved) {\n        const locator = pnpApi.findPackageLocator(resolved);\n        if (locator && (dependencyTreeRoots.has(`${locator.name}@${locator.reference}`) || isPortal(locator.reference))) {\n          str = resolved;\n        }\n      }\n\n      str = normalize(str);\n\n      if (str.match(/\\.zip\\//)) {\n        switch (hostInfo) {\n          // Absolute VSCode `Uri.fsPath`s need to start with a slash.\n          // VSCode only adds it automatically for supported schemes,\n          // so we have to do it manually for the `zip` scheme.\n          // The path needs to start with a caret otherwise VSCode doesn't handle the protocol\n          //\n          // Ref: https://github.com/microsoft/vscode/issues/105014#issuecomment-686760910\n          //\n          // 2021-10-08: VSCode changed the format in 1.61.\n          // Before | ^zip:/c:/foo/bar.zip/package.json\n          // After  | ^/zip//c:/foo/bar.zip/package.json\n          //\n          // 2022-04-06: VSCode changed the format in 1.66.\n          // Before | ^/zip//c:/foo/bar.zip/package.json\n          // After  | ^/zip/c:/foo/bar.zip/package.json\n          //\n          // 2022-05-06: VSCode changed the format in 1.68\n          // Before | ^/zip/c:/foo/bar.zip/package.json\n          // After  | ^/zip//c:/foo/bar.zip/package.json\n          //\n          case `vscode <1.61`: {\n            str = `^zip:${str}`;\n          } break;\n\n          case `vscode <1.66`: {\n            str = `^/zip/${str}`;\n          } break;\n\n          case `vscode <1.68`: {\n            str = `^/zip${str}`;\n          } break;\n\n          case `vscode`: {\n            str = `^/zip/${str}`;\n          } break;\n\n          // To make \"go to definition\" work,\n          // We have to resolve the actual file system path from virtual path\n          // and convert scheme to supported by [vim-rzip](https://github.com/lbrayner/vim-rzip)\n          case `coc-nvim`: {\n            str = normalize(resolved).replace(/\\.zip\\//, `.zip::`);\n            str = resolve(`zipfile:${str}`);\n          } break;\n\n          // Support neovim native LSP and [typescript-language-server](https://github.com/theia-ide/typescript-language-server)\n          // We have to resolve the actual file system path from virtual path,\n          // everything else is up to neovim\n          case `neovim`: {\n            str = normalize(resolved).replace(/\\.zip\\//, `.zip::`);\n            str = `zipfile://${str}`;\n          } break;\n\n          default: {\n            str = `zip:${str}`;\n          } break;\n        }\n      } else {\n        str = str.replace(/^\\/?/, process.platform === `win32` ? `` : `/`);\n      }\n    }\n\n    return str;\n  }\n\n  function fromEditorPath(str) {\n    switch (hostInfo) {\n      case `coc-nvim`: {\n        str = str.replace(/\\.zip::/, `.zip/`);\n        // The path for coc-nvim is in format of /<pwd>/zipfile:/<pwd>/.yarn/...\n        // So in order to convert it back, we use .* to match all the thing\n        // before `zipfile:`\n        return process.platform === `win32`\n          ? str.replace(/^.*zipfile:\\//, ``)\n          : str.replace(/^.*zipfile:/, ``);\n      } break;\n\n      case `neovim`: {\n        str = str.replace(/\\.zip::/, `.zip/`);\n        // The path for neovim is in format of zipfile:///<pwd>/.yarn/...\n        return str.replace(/^zipfile:\\/\\//, ``);\n      } break;\n\n      case `vscode`:\n      default: {\n        return str.replace(/^\\^?(zip:|\\/zip(\\/ts-nul-authority)?)\\/+/, process.platform === `win32` ? `` : `/`)\n      } break;\n    }\n  }\n\n  // Force enable 'allowLocalPluginLoads'\n  // TypeScript tries to resolve plugins using a path relative to itself\n  // which doesn't work when using the global cache\n  // https://github.com/microsoft/TypeScript/blob/1b57a0395e0bff191581c9606aab92832001de62/src/server/project.ts#L2238\n  // VSCode doesn't want to enable 'allowLocalPluginLoads' due to security concerns but\n  // TypeScript already does local loads and if this code is running the user trusts the workspace\n  // https://github.com/microsoft/vscode/issues/45856\n  const ConfiguredProject = tsserver.server.ConfiguredProject;\n  const {enablePluginsWithOptions: originalEnablePluginsWithOptions} = ConfiguredProject.prototype;\n  ConfiguredProject.prototype.enablePluginsWithOptions = function() {\n    this.projectService.allowLocalPluginLoads = true;\n    return originalEnablePluginsWithOptions.apply(this, arguments);\n  };\n\n  // And here is the point where we hijack the VSCode <-> TS communications\n  // by adding ourselves in the middle. We locate everything that looks\n  // like an absolute path of ours and normalize it.\n\n  const Session = tsserver.server.Session;\n  const {onMessage: originalOnMessage, send: originalSend} = Session.prototype;\n  let hostInfo = `unknown`;\n\n  Object.assign(Session.prototype, {\n    onMessage(/** @type {string | object} */ message) {\n      const isStringMessage = typeof message === 'string';\n      const parsedMessage = isStringMessage ? JSON.parse(message) : message;\n\n      if (\n        parsedMessage != null &&\n        typeof parsedMessage === `object` &&\n        parsedMessage.arguments &&\n        typeof parsedMessage.arguments.hostInfo === `string`\n      ) {\n        hostInfo = parsedMessage.arguments.hostInfo;\n        if (hostInfo === `vscode` && process.env.VSCODE_IPC_HOOK) {\n          const [, major, minor] = (process.env.VSCODE_IPC_HOOK.match(\n            // The RegExp from https://semver.org/ but without the caret at the start\n            /(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$/\n          ) ?? []).map(Number)\n\n          if (major === 1) {\n            if (minor < 61) {\n              hostInfo += ` <1.61`;\n            } else if (minor < 66) {\n              hostInfo += ` <1.66`;\n            } else if (minor < 68) {\n              hostInfo += ` <1.68`;\n            }\n          }\n        }\n      }\n\n      const processedMessageJSON = JSON.stringify(parsedMessage, (key, value) => {\n        return typeof value === 'string' ? fromEditorPath(value) : value;\n      });\n\n      return originalOnMessage.call(\n        this,\n        isStringMessage ? processedMessageJSON : JSON.parse(processedMessageJSON)\n      );\n    },\n\n    send(/** @type {any} */ msg) {\n      return originalSend.call(this, JSON.parse(JSON.stringify(msg, (key, value) => {\n        return typeof value === `string` ? toEditorPath(value) : value;\n      })));\n    }\n  });\n\n  return tsserver;\n};\n\nif (existsSync(absPnpApiPath)) {\n  if (!process.versions.pnp) {\n    // Setup the environment to be able to require typescript/lib/tsserver.js",
+      "tokens": 0,
+      "firstFile": {
+        "name": ".yarn/sdks/typescript/lib/tsserver.js",
+        "start": 1,
+        "end": 219,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 219,
+          "column": 74,
+          "position": 1885
+        }
+      },
+      "secondFile": {
+        "name": ".yarn/sdks/typescript/lib/typescript.js",
+        "start": 1,
+        "end": 219,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 219,
+          "column": 81,
+          "position": 1885
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 14,
+      "fragment": "#!/usr/bin/env node\n\nconst {existsSync} = require(`fs`);\nconst {createRequire} = require(`module`);\nconst {resolve} = require(`path`);\n\nconst relPnpApiPath = \"../../../../.pnp.cjs\";\n\nconst absPnpApiPath = resolve(__dirname, relPnpApiPath);\nconst absRequire = createRequire(absPnpApiPath);\n\nif (existsSync(absPnpApiPath)) {\n  if (!process.versions.pnp) {\n    // Setup the environment to be able to require typescript/lib/tsc.js",
+      "tokens": 0,
+      "firstFile": {
+        "name": ".yarn/sdks/typescript/lib/tsc.js",
+        "start": 1,
+        "end": 14,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 14,
+          "column": 69,
+          "position": 119
+        }
+      },
+      "secondFile": {
+        "name": ".yarn/sdks/typescript/lib/typescript.js",
+        "start": 1,
+        "end": 14,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 14,
+          "column": 76,
+          "position": 119
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 9,
+      "fragment": "const postCardTexture = new THREE.TextureLoader().load('images/postcard.jpg')\n      postCardTexture.magFilter = THREE.NearestFilter\n      postCardTexture.minFilter = THREE.LinearMipMapLinearFilter\n      postCardTexture.wrapS = THREE.RepeatWrapping\n      postCardTexture.wrapT = THREE.RepeatWrapping\n      postCardTexture.repeat.set(1, 0.703125)\n      postCardTexture.offset.y = (1 - 0.703125) / 2\n\n      const",
+      "tokens": 0,
+      "firstFile": {
+        "name": "scripts/objects/postCard.service.js",
+        "start": 74,
+        "end": 82,
+        "startLoc": {
+          "line": 74,
+          "column": 7,
+          "position": 793
+        },
+        "endLoc": {
+          "line": 82,
+          "column": 6,
+          "position": 892
+        }
+      },
+      "secondFile": {
+        "name": "scripts/objects/postCard.service.js",
+        "start": 18,
+        "end": 26,
+        "startLoc": {
+          "line": 18,
+          "column": 7,
+          "position": 120
+        },
+        "endLoc": {
+          "line": 26,
+          "column": 4,
+          "position": 219
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 10,
+      "fragment": "desktop.screen.distance)\n            defer.resolve({\n              width: (pixelAspect * desktop.screen.width),\n              height: (pixelAspect * desktop.screen.height),\n              calculatedScale: (pixelAspect * desktop.screen.height) / 568\n            })\n          }\n        })\n\n        timeline.to(camera",
+      "tokens": 0,
+      "firstFile": {
+        "name": "scripts/objects/desktop.service.js",
+        "start": 198,
+        "end": 207,
+        "startLoc": {
+          "line": 198,
+          "column": 2,
+          "position": 2473
+        },
+        "endLoc": {
+          "line": 207,
+          "column": 7,
+          "position": 2558
+        }
+      },
+      "secondFile": {
+        "name": "scripts/objects/desktop.service.js",
+        "start": 159,
+        "end": 168,
+        "startLoc": {
+          "line": 159,
+          "column": 2,
+          "position": 2094
+        },
+        "endLoc": {
+          "line": 168,
+          "column": 8,
+          "position": 2179
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 10,
+      "fragment": "const businessCardTexture = new THREE.TextureLoader().load('images/businesscard.jpg')\n      businessCardTexture.magFilter = THREE.NearestFilter\n      businessCardTexture.minFilter = THREE.LinearMipMapLinearFilter\n\n      businessCardTexture.wrapS = THREE.RepeatWrapping\n      businessCardTexture.wrapT = THREE.RepeatWrapping\n      businessCardTexture.repeat.set(0.9, 1)\n      businessCardTexture.offset.x = 0.05\n\n      const",
+      "tokens": 0,
+      "firstFile": {
+        "name": "scripts/objects/businessCard.service.js",
+        "start": 77,
+        "end": 86,
+        "startLoc": {
+          "line": 77,
+          "column": 7,
+          "position": 794
+        },
+        "endLoc": {
+          "line": 86,
+          "column": 6,
+          "position": 884
+        }
+      },
+      "secondFile": {
+        "name": "scripts/objects/businessCard.service.js",
+        "start": 18,
+        "end": 26,
+        "startLoc": {
+          "line": 18,
+          "column": 7,
+          "position": 117
+        },
+        "endLoc": {
+          "line": 26,
+          "column": 4,
+          "position": 206
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 13,
+      "fragment": ".forEach(function (element) {\n      scene.add(element);\n      if (element.rayReceiver) {\n        if (element.rayReceiver.length > 0) {\n          element.rayReceiver.forEach(function (child) {\n            raycastingObjects.push(child);\n          })\n        } else {\n          raycastingObjects.push(element.rayReceiver);\n        }\n      }\n    });\n  }",
+      "tokens": 0,
+      "firstFile": {
+        "name": "scripts/home/home.controller.js",
+        "start": 548,
+        "end": 560,
+        "startLoc": {
+          "line": 548,
+          "column": 8,
+          "position": 6390
+        },
+        "endLoc": {
+          "line": 560,
+          "column": 2,
+          "position": 6496
+        }
+      },
+      "secondFile": {
+        "name": "scripts/home/home.controller.js",
+        "start": 535,
+        "end": 548,
+        "startLoc": {
+          "line": 535,
+          "column": 7,
+          "position": 6282
+        },
+        "endLoc": {
+          "line": 548,
+          "column": 8,
+          "position": 6389
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 7,
+      "fragment": ") {\n        TweenMax.to(camera.position, 0.5 + timeDelay, {\n          x: camera.defaultPosition.x + 10 * mouse.x,\n          z: camera.defaultPosition.z + 10 * mouse.x,\n          y: camera.defaultPosition.y + 10 * mouse.y\n        });\n      } else if (camera.model == 'Top Front Right'",
+      "tokens": 0,
+      "firstFile": {
+        "name": "scripts/home/home.controller.js",
+        "start": 674,
+        "end": 680,
+        "startLoc": {
+          "line": 674,
+          "column": 17,
+          "position": 7613
+        },
+        "endLoc": {
+          "line": 680,
+          "column": 18,
+          "position": 7717
+        }
+      },
+      "secondFile": {
+        "name": "scripts/home/home.controller.js",
+        "start": 668,
+        "end": 674,
+        "startLoc": {
+          "line": 668,
+          "column": 12,
+          "position": 7508
+        },
+        "endLoc": {
+          "line": 674,
+          "column": 17,
+          "position": 7612
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 29,
+      "fragment": "hoverTimeline.to(element.position, t, {\n                ease: Power1.easeIn,\n                x: element.hoverDestinationPosition.x,\n                y: element.hoverDestinationPosition.y,\n                z: element.hoverDestinationPosition.z\n              }, 0)\n\n              hoverTimeline.to(element.rotation, t, {\n                ease: Power1.easeIn,\n                x: element.hoverDestinationRotation.x,\n                y: element.hoverDestinationRotation.y,\n                z: element.hoverDestinationRotation.z\n              }, 0)\n\n              hoverTimeline.to(element.position, t, {\n                ease: Power1.easeIn,\n                x: element.defaultPosition.x,\n                y: element.defaultPosition.y,\n                z: element.defaultPosition.z\n              }, t)\n\n              hoverTimeline.to(element.rotation, t, {\n                ease: Power1.easeIn,\n                x: element.defaultRotation.x,\n                y: element.defaultRotation.y,\n                z: element.defaultRotation.z\n              }, t)\n            })\n          };",
+      "tokens": 0,
+      "firstFile": {
+        "name": "scripts/home/draw.service.js",
+        "start": 323,
+        "end": 351,
+        "startLoc": {
+          "line": 323,
+          "column": 15,
+          "position": 3380
+        },
+        "endLoc": {
+          "line": 351,
+          "column": 2,
+          "position": 3640
+        }
+      },
+      "secondFile": {
+        "name": "scripts/home/draw.service.js",
+        "start": 255,
+        "end": 284,
+        "startLoc": {
+          "line": 255,
+          "column": 15,
+          "position": 2719
+        },
+        "endLoc": {
+          "line": 284,
+          "column": 2,
+          "position": 2981
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 28,
+      "fragment": "hoverTimeline.to(object.position, t, {\n            ease: Power1.easeInOut,\n            x: object.hoverDestinationPosition.x,\n            y: object.hoverDestinationPosition.y,\n            z: object.hoverDestinationPosition.z\n          }, 0)\n\n          hoverTimeline.to(object.rotation, t, {\n            ease: Power1.easeInOut,\n            x: object.hoverDestinationRotation.x,\n            y: object.hoverDestinationRotation.y,\n            z: object.hoverDestinationRotation.z\n          }, 0)\n\n          hoverTimeline.to(object.position, t, {\n            ease: Power1.easeInOut,\n            x: object.defaultPosition.x,\n            y: object.defaultPosition.y,\n            z: object.defaultPosition.z\n          }, t)\n\n          hoverTimeline.to(object.rotation, t, {\n            ease: Power1.easeInOut,\n            x: object.defaultRotation.x,\n            y: object.defaultRotation.y,\n            z: object.defaultRotation.z\n          }, t)\n        }",
+      "tokens": 0,
+      "firstFile": {
+        "name": "scripts/home/draw.service.js",
+        "start": 353,
+        "end": 380,
+        "startLoc": {
+          "line": 353,
+          "column": 11,
+          "position": 3644
+        },
+        "endLoc": {
+          "line": 380,
+          "column": 2,
+          "position": 3899
+        }
+      },
+      "secondFile": {
+        "name": "scripts/home/draw.service.js",
+        "start": 225,
+        "end": 253,
+        "startLoc": {
+          "line": 225,
+          "column": 11,
+          "position": 2437
+        },
+        "endLoc": {
+          "line": 253,
+          "column": 3,
+          "position": 2693
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 6,
+      "fragment": ".to(object.position, (object.position.y - object.defaultPosition.y) / (object.hoverDestinationPosition.y - object.defaultPosition.y) * t, {\n            ease: Power1.easeInOut,\n            x: object.defaultPosition.x,\n            y: object.defaultPosition.y,\n            z: object.defaultPosition.z\n          })",
+      "tokens": 0,
+      "firstFile": {
+        "name": "scripts/home/draw.service.js",
+        "start": 383,
+        "end": 388,
+        "startLoc": {
+          "line": 383,
+          "column": 9,
+          "position": 3936
+        },
+        "endLoc": {
+          "line": 388,
+          "column": 2,
+          "position": 4028
+        }
+      },
+      "secondFile": {
+        "name": "scripts/home/draw.service.js",
+        "start": 294,
+        "end": 299,
+        "startLoc": {
+          "line": 294,
+          "column": 18,
+          "position": 3073
+        },
+        "endLoc": {
+          "line": 299,
+          "column": 2,
+          "position": 3165
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 6,
+      "fragment": ".to(object.rotation, (object.position.y - object.defaultPosition.y) / (object.hoverDestinationPosition.y - object.defaultPosition.y) * t, {\n            ease: Power1.easeInOut,\n            x: object.defaultRotation.x,\n            y: object.defaultRotation.y,\n            z: object.defaultRotation.z\n          })",
+      "tokens": 0,
+      "firstFile": {
+        "name": "scripts/home/draw.service.js",
+        "start": 390,
+        "end": 395,
+        "startLoc": {
+          "line": 390,
+          "column": 9,
+          "position": 4033
+        },
+        "endLoc": {
+          "line": 395,
+          "column": 2,
+          "position": 4125
+        }
+      },
+      "secondFile": {
+        "name": "scripts/home/draw.service.js",
+        "start": 301,
+        "end": 306,
+        "startLoc": {
+          "line": 301,
+          "column": 18,
+          "position": 3173
+        },
+        "endLoc": {
+          "line": 306,
+          "column": 2,
+          "position": 3265
+        }
+      }
+    }
+  ],
+  "filename": "/node-deps/node_modules/@jscpd/html-reporter/dist/templates/main.pug"
+}
