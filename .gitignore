@@ -53,6 +53,9 @@ build/
 # Dependency directories
 libs/
 
+# Docs
+docs/
+
 # GSAP
 gsap/
 
