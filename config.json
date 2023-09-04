@@ -1,14 +1,17 @@
-﻿{
+{
   "basic": {
-    "socials": [{
-      "icon": "facebook",
-      "url": "https://www.facebook.com/johndoe",
-      "name": "Facebook"
-    }, {
-      "icon": "dribbble",
-      "url": "http://dribbble.com/johndoe",
-      "name": "Dribbble"
-    }],
+    "socials": [
+      {
+        "icon": "facebook",
+        "url": "https://www.facebook.com/johndoe",
+        "name": "Facebook"
+      },
+      {
+        "icon": "dribbble",
+        "url": "http://dribbble.com/johndoe",
+        "name": "Dribbble"
+      }
+    ],
     "heading": "John Doe",
     "subheading": "Front-end Developer",
     "about": "Hello, I'm John and this is my extraordinary portfolio. Unfortunately you are on a mobile device and you can't see my works. Please come back here on desktop."
@@ -59,25 +62,32 @@
     "y": -30,
     "enabled": true,
     "rotation": 0,
-    "projects": [{
-      "name": "Example StartBootstrap 1",
-      "address": "http://samplebootstrap.com",
-      "color": "#ecf0f1",
-      "logo": "images/flatdesk-logo-black.png",
-      "contentType": "url",
-      "swiperInstance": {},
-      "slides": ["mobile-screen-1.png", "mobile-screen-2.png", "mobile-screen-3.png"],
-      "url": "https://blackrockdigital.github.io/startbootstrap-freelancer/"
-    }, {
-      "name": "Example StartBootstrap 2",
-      "address": "https://blackrockdigital.github.io/startbootstrap-agency/",
-      "color": "#ecf0f1",
-      "logo": "images/flatdesk-logo-black.png",
-      "contentType": "url",
-      "swiperInstance": {},
-      "slides": [""],
-      "url": "https://blackrockdigital.github.io/startbootstrap-agency/"
-    }]
+    "projects": [
+      {
+        "name": "Example StartBootstrap 1",
+        "address": "http://samplebootstrap.com",
+        "color": "#ecf0f1",
+        "logo": "images/flatdesk-logo-black.png",
+        "contentType": "url",
+        "swiperInstance": {},
+        "slides": [
+          "mobile-screen-1.png",
+          "mobile-screen-2.png",
+          "mobile-screen-3.png"
+        ],
+        "url": "https://blackrockdigital.github.io/startbootstrap-freelancer/"
+      },
+      {
+        "name": "Example StartBootstrap 2",
+        "address": "https://blackrockdigital.github.io/startbootstrap-agency/",
+        "color": "#ecf0f1",
+        "logo": "images/flatdesk-logo-black.png",
+        "contentType": "url",
+        "swiperInstance": {},
+        "slides": [""],
+        "url": "https://blackrockdigital.github.io/startbootstrap-agency/"
+      }
+    ]
   },
   "desk": {
     "width": 90,

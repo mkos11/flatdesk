@@ -3,7 +3,7 @@ name: OptimizedMegaLinter
 on:
   push:
   pull_request:
-    branches: [main]
+    branches: [test]
 
 env:
   APPLY_FIXES: all
