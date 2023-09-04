@@ -1,6 +1,30 @@
 {
-  "name": "typescript",
-  "version": "5.2.2-sdk",
-  "main": "./lib/typescript.js",
-  "type": "commonjs"
+  "name": "flatdesk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "latolatin-webfont": "*",
+    "animate.css": "*",
+    "swiper": "*",
+    "angular-ui-select": "*",
+    "angular-bootstrap-colorpicker": "*",
+    "modernizr": "*",
+    "angular": "*",
+    "angular-ui-router": "*",
+    "three.js": "*",
+    "gsap": "*",
+    "angular-animate": "*",
+    "angular-swiper": "*",
+    "angular-bootstrap": "*",
+    "jquery": "*",
+    "bootstrap": "*",
+    "angular-sanitize": "*",
+    "blob-polyfill": "*",
+    "file-saver.js": "*",
+    "angular-file-saver": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
