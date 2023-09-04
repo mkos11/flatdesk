@@ -44,41 +44,41 @@ jobs:
         uses: oxsecurity/megalinter/flavors/cupcake/@v7.3.0
         env:
           VALIDATE_ALL_CODEBASE: true
-          GITHUB_TOKEN: ${{ secretsMEGA_LINTER }}
+          GITHUB_TOKEN: ${{ secrets.MEGA_LINTER }}
 
       # The next four steps should always run unless the code is in a pristine state
       - name: Create Pull Request with applied fixes
         id: cpr
-        if: ${{ always() }}
+        if: ${{ success() }}
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secretsMEGA_LINTER }}
+          token: ${{ secrets.MEGA_LINTER }}
           commit-message: "[MegaLinter] Apply linters automatic fixes"
           title: "[MegaLinter] Apply linters automatic fixes"
           labels: bot
 
       - name: Create PR output
-        if: ${{ always() }}
+        if: ${{ success() }}
         run: |
           echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
           echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
 
       - name: Prepare commit
-        if: ${{ always() }}
+        if: ${{ success() }}
         run: sudo chown -Rc $UID .git/
 
       - name: Commit and push applied linter fixes
-        if: ${{ always() }}
+        if: ${{ success() }}
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
           commit_message: "[MegaLinter] Apply linter fixes"
           commit_user_name: megalinter-bot
           commit_user_email: nicolas.vuillamy@ox.security
-          token: ${{ secrets.MEGA_LINTER }} # Use a personal access token (PAT) with the necessary permissions
+          github_token: ${{ secrets.MEGA_LINTER }} # Use a personal access token (PAT) with the necessary permissions
 
       - name: Upload MegaLinter artifacts
-        if: ${{ always() }}
+        if: ${{ success() }}
         uses: actions/upload-artifact@v3
         with:
           name: MegaLinter reports
