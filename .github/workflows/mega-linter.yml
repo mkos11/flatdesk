@@ -75,6 +75,7 @@ jobs:
           commit_message: "[MegaLinter] Apply linter fixes"
           commit_user_name: megalinter-bot
           commit_user_email: nicolas.vuillamy@ox.security
+          token: ${{ secrets.PAT }}  # Use a personal access token (PAT) with the necessary permissions
 
       - name: Upload MegaLinter artifacts
         if: ${{ always() }}
