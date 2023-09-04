@@ -1,0 +1,16 @@
+name: Push
+
+on: pull_request
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      # Cache Node and Yarn dependencies
+      - name: Cache dependencies
+        uses: ./.github/actions/cache-dependencies

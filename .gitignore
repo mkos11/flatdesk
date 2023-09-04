@@ -83,3 +83,8 @@
 # Three.js
 three.js/
 
+ignore/
+
+line to your .gitignore file:
+
+.vscode/
