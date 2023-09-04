@@ -1,0 +1,27 @@
+---
+name: OptimizedMegaLinter
+
+on:
+  push:
+  pull_request:
+    branches: [test]
+
+env:
+  APPLY_FIXES: all
+  VALIDATE_ALL_CODEBASE: true
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  # Use a standard GitHub token name for consistency
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Run MegaLinter
+        uses: nvuillam/mega-linter@v4

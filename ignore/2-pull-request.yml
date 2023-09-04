@@ -1,0 +1,80 @@
+name: Pull Request
+
+on:
+  workflow_run:
+    workflows: ["Push"]
+    types:
+      - completed
+
+env:
+  APPLY_FIXES: all
+  VALIDATE_ALL_CODEBASE: true
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  # Use a standard GitHub token name for consistency
+  cancel-in-progress: true
+
+jobs:
+  megalinter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      # Cache Node and Yarn dependencies
+      - name: Cache dependencies
+        uses: svpermari0/flatdesk/.github/actions/cache-dependencies@test
+
+      # Run MegaLinter
+      - name: Run MegaLinter
+        uses: nvuillam/mega-linter@v7.3.0
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # The next four steps should always run unless the code is in a pristine state
+      - name: Create Pull Request with applied fixes
+        id: cpr
+        if: ${{ success() }}
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "[MegaLinter] Apply linters automatic fixes"
+          title: "[MegaLinter] Apply linters automatic fixes"
+          labels: bot
+
+      - name: Create PR output
+        if: ${{ success() }}
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}" 
+          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
+
+      - name: Prepare commit
+        if: ${{ success() }}
+        run: sudo chown -Rc $UID .git/
+
+      - name: Commit and push applied linter fixes
+        if: ${{ success() }}
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          create_branch: peer-review
+          commit_message: "[MegaLinter] Apply linter fixes"
+          commit_options: "--fix-up --signoff"
+          commit_user_name: megalinter-bot
+          commit_user_email: my-github-actions-bot@example.org
+          disable_globbing: true
+          push_options: "--force"
+          skip_dirty_check: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload MegaLinter artifacts
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: MegaLinter reports
+          path: |
+            megalinter-reports 
+            mega-linter.log

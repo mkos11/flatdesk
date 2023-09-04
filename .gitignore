@@ -83,7 +83,7 @@
 # Three.js
 three.js/
 
-ignore/
+# ignore/
 
 line to your .gitignore file:
 

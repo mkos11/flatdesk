@@ -1,0 +1,54 @@
+name: "Sweep Fast Issue for svpermari0/smda"
+description: "For few-line fixes to be handled by Sweep in the svpermari0/smda repository. Sweep will use GPT-3.5 to quickly create a PR for very small changes."
+assignees: "svpermari0"
+labels: "sweep"
+projects: "svpermari0/smda"
+body:
+  - type: markdown
+    attributes:
+      value: "## Welcome to the svpermari0/smda repository!"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug for svpermari0/smda! If you need real-time help, join us on Discord.
+  - type: input
+    id: prevalence
+    attributes:
+      label: "Bug prevalence"
+      description: "How often do you or others encounter this bug in svpermari0/smda?"
+      placeholder: "Whenever I visit the user account page (1-2 times a week)"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: "Reproduction steps"
+      description: "How do you trigger this bug in svpermari0/smda? Please walk us through it step by step."
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true
+  - type: dropdown
+    id: download
+    attributes:
+      label: "How did you download the software?"
+      options:
+        - Homebrew
+        - MacPorts
+        - apt-get
+        - Built from source
+    validations:
+      required: true
+  - type: checkboxes
+    id: cat-preferences
+    attributes:
+      label: "What kinds of cats do you like?"
+      description: "You may select more than one."
+      options:
+        - label: "Orange cat (required. Everyone likes orange cats.)"
+          required: true
+        - label: "**Black cat**"
