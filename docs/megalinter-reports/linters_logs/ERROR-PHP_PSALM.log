@@ -1,0 +1,44 @@
+Results of psalm linter (version Psalm.5.14.1@)
+See documentation on https://megalinter.io/7.3.0/descriptors/php_psalm/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+Warning: "findUnusedBaselineEntry" will default to "true" in Psalm 6. You should explicitly enable or disable this setting.
+Warning: "findUnusedCode" will default to "true" in Psalm 6. You should explicitly enable or disable this setting.
+
+Install the opcache extension to make use of JIT on PHP 8.0+ for a 20%+ performance boost!
+
+Target PHP version: 8.1 (inferred from current PHP version).
+Scanning files...
+Analyzing files...
+
+E
+
+ERROR: PossiblyInvalidOperand - ../../..mailscript.php:3:27 - Cannot concatenate with a non-empty-array<int|string, array<int|string, mixed>|string>|string (see https://psalm.dev/163)
+$mailHeaders = "From: " . $_POST["userName"] . "<". $_POST["userEmail"] .">\r\n";
+
+
+ERROR: PossiblyInvalidOperand - ../../..mailscript.php:3:53 - Cannot concatenate with a non-empty-array<int|string, array<int|string, mixed>|string>|string (see https://psalm.dev/163)
+$mailHeaders = "From: " . $_POST["userName"] . "<". $_POST["userEmail"] .">\r\n";
+
+
+ERROR: PossiblyInvalidArgument - ../../..mailscript.php:4:9 - Argument 1 of mail expects string, but possibly different type non-empty-array<int|non-empty-string, array<int|non-empty-string, mixed>|string>|string provided (see https://psalm.dev/092)
+if(mail($toEmail, $_POST["subject"], $_POST["content"], $mailHeaders)) {
+
+
+ERROR: PossiblyInvalidArgument - ../../..mailscript.php:4:19 - Argument 2 of mail expects string, but possibly different type non-empty-array<int|non-empty-string, array<int|non-empty-string, mixed>|string>|string provided (see https://psalm.dev/092)
+if(mail($toEmail, $_POST["subject"], $_POST["content"], $mailHeaders)) {
+
+
+ERROR: PossiblyInvalidArgument - ../../..mailscript.php:4:38 - Argument 3 of mail expects string, but possibly different type non-empty-array<int|non-empty-string, array<int|non-empty-string, mixed>|string>|string provided (see https://psalm.dev/092)
+if(mail($toEmail, $_POST["subject"], $_POST["content"], $mailHeaders)) {
+
+
+------------------------------
+5 errors found
+------------------------------
+
+Checks took 0.63 seconds and used 49.259MB of memory
+Psalm was unable to infer types in the codebase
+

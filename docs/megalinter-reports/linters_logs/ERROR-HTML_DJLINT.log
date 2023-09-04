@@ -1,0 +1,73 @@
+Results of djlint linter (version 1.32.1)
+See documentation on https://megalinter.io/7.3.0/descriptors/html_djlint/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+
+Linting 0/22 files ┈┈┈┈┈┈┈┈┈┈ 00:00    Linting 1/22 files ┈┈┈┈┈┈┈┈┈┈ 00:00    Linting 15/22 files ━━━━━━┈┈┈┈ 00:00                                            Linting 22/22 files ━━━━━━━━━━ 00:00    Linting 22/22 files ━━━━━━━━━━ 00:00    
+
+
+index-config.html
+───────────────────────────────────────────────────────────────────────────────
+H031 2:0 Consider adding meta keywords. <html class="no-js" 
+H006 35:52 Img tag should have height and width attributes. <img src="images/log
+H021 43:4 Inline styles should be avoided. <svg version="1.1" i
+H026 58:2 Empty id and class tags can be removed. <div id="configurato
+H014 59:0 Found extra blank lines. </div>
+
+index.html
+───────────────────────────────────────────────────────────────────────────────
+H031 2:0 Consider adding meta keywords. <html class="no-js" 
+H006 41:52 Img tag should have height and width attributes. <img src="images/log
+H021 50:4 Inline styles should be avoided. <svg version="1.1" i
+H014 64:11 Found extra blank lines. </ui-view>
+
+lite.html
+───────────────────────────────────────────────────────────────────────────────
+H031 2:0 Consider adding meta keywords. <html class="no-js" 
+H014 208:0 Found extra blank lines. </div>
+
+templates/configurator.html
+───────────────────────────────────────────────────────────────────────────────
+H022 17:64 Use HTTPS for external links. <a target="_blank" h
+
+templates/desktop/desktop.template.html
+───────────────────────────────────────────────────────────────────────────────
+H014 14:73 Found extra blank lines. s.length">
+H006 20:12 Img tag should have height and width attributes. <img ng-src="{{proje
+H013 20:12 Img tag should have an alt attribute. <img ng-src="{{proje
+H014 26:2 Found extra blank lines. </div>
+
+templates/home.html
+───────────────────────────────────────────────────────────────────────────────
+H022 3:4 Use HTTPS for external links. <a href="http://www.
+H006 4:6 Img tag should have height and width attributes. <img src="images/mad
+H013 4:6 Img tag should have an alt attribute. <img src="images/mad
+
+templates/phone/phoneInvision.template.html
+───────────────────────────────────────────────────────────────────────────────
+H021 2:2 Inline styles should be avoided. <iframe width="416" 
+
+templates/portfolio/portfolio1.template.html
+───────────────────────────────────────────────────────────────────────────────
+H006 3:4 Img tag should have height and width attributes. <img ng-src="{{vm.ge
+H006 6:4 Img tag should have height and width attributes. <img ng-src="{{vm.ge
+
+templates/portfolio/portfolio2.template.html
+───────────────────────────────────────────────────────────────────────────────
+H006 3:4 Img tag should have height and width attributes. <img ng-src="{{vm.ge
+H006 6:4 Img tag should have height and width attributes. <img ng-src="{{vm.ge
+
+templates/portfolio/portfolio3.template.html
+───────────────────────────────────────────────────────────────────────────────
+H006 3:4 Img tag should have height and width attributes. <img ng-src="{{vm.ge
+H006 6:4 Img tag should have height and width attributes. <img ng-src="{{vm.ge
+
+templates/tablet/tabletInvision.template.html
+───────────────────────────────────────────────────────────────────────────────
+H021 2:2 Inline styles should be avoided. <iframe width="950" 
+
+Linted 22 files, found 27 errors.
+
+

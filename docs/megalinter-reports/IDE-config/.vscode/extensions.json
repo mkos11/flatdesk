@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "monosans.djlint",
+        "adamwalzer.scss-lint",
+        "getpsalm.psalm-vscode-plugin",
+        "standard.vscode-standard",
+        "Bridgecrew.checkov",
+        "HTMLHint.vscode-htmlhint",
+        "streetsidesoftware.code-spell-checker",
+        "stylelint.vscode-stylelint",
+        "esbenp.prettier-vscode",
+        "ikappas.phpcs",
+        "AquaSecurityOfficial.trivy-vulnerability-scanner"
+    ]
+}

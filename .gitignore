@@ -1,91 +1,85 @@
-# AngularJS
-.angular-cache/
-.angular-cli.json
-.angular-config.json
-.angular.json
-.karma.conf.js
-.protractor.conf.js
+# # AngularJS
+# .angular-cache/
+# .angular-cli.json
+# .angular-config.json
+# .angular.json
+# .karma.conf.js
+# .protractor.conf.js
 
-# Angular Animate
-angular-animate/
+# # Angular Animate
+# angular-animate/
 
-# Angular Bootstrap
-angular-bootstrap/
+# # Angular Bootstrap
+# angular-bootstrap/
 
-# Angular Bootstrap Colorpicker
-angular-bootstrap-colorpicker/
+# # Angular Bootstrap Colorpicker
+# angular-bootstrap-colorpicker/
 
-# Angular File Saver
-angular-file-saver/
+# # Angular File Saver
+# angular-file-saver/
 
-# Angular Sanitize
-angular-sanitize/
+# # Angular Sanitize
+# angular-sanitize/
 
-# Angular Swiper
-angular-swiper/
+# # Angular Swiper
+# angular-swiper/
 
-# Angular UI Router
-ui-router/
+# # Angular UI Router
+# ui-router/
 
-# Angular UI Select
-angular-ui-select/
+# # Angular UI Select
+# angular-ui-select/
 
-# Animate.css
-animate.css/
+# # Animate.css
+# animate.css/
 
-# Bower
-bower_components/
+# # Bower
+# bower_components/
 
-# Bootstrap
-bootstrap/
+# # Bootstrap
+# bootstrap/
 
-# Compiled binary files
-*.class
-*.dll
-*.exe
-*.o
-*.so
+# # Compiled binary files
+# *.class
+# *.dll
+# *.exe
+# *.o
+# *.so
 
-# Compiled output
-dist/
-build/
+# # Compiled output
+# dist/
+# build/
 
-# Dependency directories
-libs/
+# # Dependency directories
+# libs/
 
-# Docs
-# docs/
+# # Docs
+# # docs/
 
-# GSAP
-gsap/
+# # GSAP
+# gsap/
 
-# IDE files
-.idea/
-.vscode/
+# # IDE files
+# .idea/
+# .vscode/
 
-# Invision
-invision/
+# # Invision
+# invision/
 
-# Logs and databases
-*.log
-*.sqlite
+# # Logs and databases
+# *.log
+# *.sqlite
 
-# Modernizr
-modernizr/
+# # Modernizr
+# modernizr/
 
-# Node.js
-node_modules/
+# # Node.js
+# node_modules/
 
-# Start Bootstrap
-startbootstrap/
+# # Start Bootstrap
+# startbootstrap/
+
 
 # Three.js
 three.js/
-.aider*
 
-*.py[cod]
-.noteablekeep
-*.vectorized_content
-*.vectorized_metadata
-.tmp/
-__pycache__

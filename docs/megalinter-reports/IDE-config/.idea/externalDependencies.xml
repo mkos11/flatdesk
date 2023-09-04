@@ -1,0 +1,7 @@
+<project version="4">
+	<component name="ExternalDependencies">
+		<plugin id="7530-scss-lint"/>
+		<plugin id="10456-prettier"/>
+		<plugin id="12754-phpstan--psalm--generics"/>
+	</component>
+</project>
