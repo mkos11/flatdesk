@@ -1,6 +1,27 @@
 {
   "name": "flatdesk",
   "packageManager": "yarn@3.6.3",
+  "dependencies": {
+    "latolatin-webfont": "*",
+    "animate.css": "*",
+    "swiper": "*",
+    "angular-ui-select": "*",
+    "angular-bootstrap-colorpicker": "*",
+    "modernizr": "*",
+    "angular": "*",
+    "angular-ui-router": "*",
+    "three.js": "*",
+    "gsap": "*",
+    "angular-animate": "*",
+    "angular-swiper": "*",
+    "angular-bootstrap": "*",
+    "jquery": "*",
+    "bootstrap": "*",
+    "angular-sanitize": "*",
+    "blob-polyfill": "*",
+    "file-saver.js": "*",
+    "angular-file-saver": "*"
+  },
   "devDependencies": {
     "typescript": "^5.2.2"
   }
