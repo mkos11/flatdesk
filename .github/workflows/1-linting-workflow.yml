@@ -27,4 +27,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: ${{ env.VALIDATE_ALL_CODEBASE }} # Referencing the workflow-level variable
         name: Run MegaLinter
-        uses: nvuillam/mega-linter@v7.3.0
+        uses: oxsecurity/megalinter/flavors/cupcake@v7.3.0
